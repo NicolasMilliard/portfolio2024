@@ -1,14 +1,11 @@
 // Components
-import Heading from "./components/homepage/heading";
-import BackgroundVideo from "./components/homepage/background_video";
+import { MainTitle, Title } from "./components/Title/Title";
 
 const Home = () => {
-  const smokeVideo = "videos/smoke.mp4";
   return (
     <main>
-      <Heading />
-      <BackgroundVideo videoPath={smokeVideo} />
-      <p>test</p>
+      <MainTitle>Nicolas Milliard</MainTitle>
+      <Title>Front-End Developer</Title>
     </main>
   );
 };
