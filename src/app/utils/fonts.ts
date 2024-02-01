@@ -5,12 +5,16 @@ export const syne = Syne({ weight: ["400", "600"], subsets: ["latin"] });
 export const buenosAires = localFont({
   src: [
     {
-      path: "../../../public/fonts/BuenosAires-Regular.woff",
-      weight: "400",
-    },
-    {
       path: "../../../public/fonts/BuenosAires-Thin.woff",
       weight: "200",
+    },
+    {
+      path: "../../../public/fonts/BuenosAires-Book.woff",
+      weight: "350",
+    },
+    {
+      path: "../../../public/fonts/BuenosAires-Regular.woff",
+      weight: "400",
     },
   ],
 });

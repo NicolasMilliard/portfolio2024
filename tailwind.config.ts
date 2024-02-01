@@ -13,6 +13,12 @@ const config: Config = {
       ultramarine: "#4848FC",
       congo_pink: "#FE877A",
     },
+    letterSpacing: {
+      widest: "10px",
+    },
+    fontWeight: {
+      book: "350",
+    },
     extend: {
       spacing: {
         "32": "32px",

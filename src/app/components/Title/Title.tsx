@@ -11,7 +11,7 @@ export const MainTitle = ({ children }: { children: any }) => {
 export const Title = ({ children }: { children: any }) => {
   return (
     <h2
-      className={`${buenosAires.className} font-extralight text-black text-4xl`}
+      className={`${buenosAires.className} font-extralight text-black text-4xl tracking-widest`}
     >
       {children}
     </h2>
