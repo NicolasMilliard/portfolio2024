@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { buenosAires } from "./utils/fonts";
-
-export const metadata: Metadata = {
-  title: "Front-End Developer | Nicolas Milliard",
-  description: "Welcome to my portfolio!",
-};
+// Components
+import Navbar from "./containers/Navbar";
 
 export default function RootLayout({
   children,
@@ -17,9 +13,10 @@ export default function RootLayout({
       <body
         className={`${buenosAires.className} overflow-x-hidden bg-gradient-to-r from-ultramarine to-congo_pink`}
       >
-        <main className="my-40 mx-32 py-54 px-60 rounded-3xl bg-grey shadow-xl">
-          {children}
-        </main>
+        <div className="my-40 mx-32 rounded-3xl bg-grey shadow-xl">
+          <Navbar />
+          <main className="py-54 px-60">{children}</main>
+        </div>
       </body>
     </html>
   );
