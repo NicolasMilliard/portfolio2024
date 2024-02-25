@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <main>
       <MainTitle>Nicolas Milliard</MainTitle>
-      <Title>Front-End Developer</Title>
+      <Title isWidest={true}>Front-End Developer</Title>
       <section className="mt-8">
         <Paragraph>
           I&apos;m an 8+ years experienced Front-End Developer.

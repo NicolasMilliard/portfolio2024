@@ -8,10 +8,20 @@ export const MainTitle = ({ children }: { children: any }) => {
   );
 };
 
-export const Title = ({ children }: { children: any }) => {
+export const Title = ({
+  children,
+  isWidest,
+}: {
+  children: any;
+  isWidest?: boolean;
+}) => {
   return (
     <h2
-      className={`${buenosAires.className} font-extralight text-black text-4xl tracking-widest`}
+      className={`${
+        buenosAires.className
+      } font-extralight text-black text-4xl ${
+        isWidest ? "tracking-widest" : ""
+      }`}
     >
       {children}
     </h2>

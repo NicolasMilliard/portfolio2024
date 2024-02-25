@@ -10,7 +10,7 @@ const Menu = () => {
   const formattedPathName = pathName === "/" ? "home" : pathName.slice(1);
 
   return (
-    <menu className={`${syne.className} flex gap-40`}>
+    <menu className={`${syne.className} flex items-center gap-40`}>
       <li>
         <MenuLink path={formattedPathName} target="home" textLink="Home" />
       </li>
