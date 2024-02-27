@@ -1,4 +1,5 @@
 // Components
+import Image from "next/image";
 import { Paragraph } from "./components/Text";
 import { MainTitle, Title } from "./components/Title";
 // Types
@@ -11,18 +12,24 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <main>
-      <MainTitle>Nicolas Milliard</MainTitle>
-      <Title isWidest={true}>Front-End Developer</Title>
-      <section className="mt-8">
+    <section className="flex items-center mt-8">
+      <Image
+        src="/images/prism.png"
+        alt="Nicolas Milliard"
+        width={512}
+        height={512}
+      />
+      <div>
+        <MainTitle>Nicolas Milliard</MainTitle>
+        <Title isWidest={true}>Front-End Developer</Title>
         <Paragraph>
           I&apos;m an 8+ years experienced Front-End Developer.
         </Paragraph>
         <Paragraph>
           I usually work with React JS and React Native in TypeScript.
         </Paragraph>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

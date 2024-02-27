@@ -13,7 +13,7 @@ export default function RootLayout({
       <body
         className={`${buenosAires.className} overflow-x-hidden bg-gradient-to-r from-ultramarine to-congo_pink`}
       >
-        <div className="my-40 mx-32 rounded-3xl bg-grey shadow-xl">
+        <div className="relative my-40 mx-32 rounded-3xl bg-grey shadow-xl">
           <Navbar />
           <main className="py-54 px-60">{children}</main>
         </div>
