@@ -24,6 +24,7 @@ const config: Config = {
         "40": "40px",
         "54": "54px",
         "60": "60px",
+        "96": "96px",
         "128": "128px",
       },
       boxShadow: {
