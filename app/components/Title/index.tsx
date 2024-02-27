@@ -27,3 +27,11 @@ export const Title = ({
     </h2>
   );
 };
+
+export const SectionTitle = ({ children }: { children: any }) => {
+  return (
+    <h2 className={`${syne.className} text-4xl font-normal text-black`}>
+      {children}
+    </h2>
+  );
+};
