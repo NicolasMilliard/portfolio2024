@@ -26,14 +26,14 @@ const Navbar = () => {
   }, [scrollPosition]);
 
   return (
-    <nav className="sticky top-0 w-full h-128">
+    <nav className="sticky top-0 h-128 w-full">
       <div
-        className={`absolute z-20 w-full h-128 flex justify-between items-center px-60 py-40 bg-white duration-300 ${dynamicBorder}`}
+        className={`absolute z-20 flex h-128 w-full items-center justify-between bg-white px-60 py-40 duration-100 ${dynamicBorder}`}
       >
         <Logo />
         <Menu />
       </div>
-      <div className="absolute z-10 w-full h-128 top-0 left-0  px-60 py-40 blur-lg bg-gradient-to-r from-ultramarine to-congo_pink rounded-3xl"></div>
+      <div className="absolute left-0 top-0 z-10 h-128 w-full  rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg"></div>
     </nav>
   );
 };

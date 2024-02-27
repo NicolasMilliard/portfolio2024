@@ -15,7 +15,7 @@ const MenuLink = ({
       href={`/${target === "home" ? "" : target}`}
       className={`${
         path === target ? "text-ultramarine" : ""
-      } hover:text-congo_pink transition-colors duration-100`}
+      } transition-colors duration-100 hover:text-congo_pink`}
     >
       {textLink}
     </Link>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <section className="flex items-center mt-8">
+    <section className="mt-8 flex items-center">
       <Image
         src="/images/prism.png"
         alt="Nicolas Milliard"
