@@ -12,7 +12,7 @@ const Tabs = ({ activeTab, onTabChange }: TabsProps) => {
       {Object.values(ExperiencesList).map((experience) => (
         <li key={experience}>
           <button
-            className={`border-l-2 border-l-ultramarine py-2 pl-2 text-ultramarine ${activeTab === experience ? "opacity-100" : "opacity-20 hover:opacity-60"}`}
+            className={`border-l-2 border-l-ultramarine py-2 pl-2 text-ultramarine duration-200 ${activeTab === experience ? "opacity-100" : "opacity-20 hover:border-l-congo_pink hover:text-congo_pink hover:opacity-80"}`}
             onClick={() => onTabChange(experience)}
           >
             {experience}

@@ -19,23 +19,18 @@ const Experiences = () => {
     setActiveTab(tab);
   };
 
-  // TODO: Not working, fix it
   useEffect(() => {
-    console.log("height", height);
     if (sectionRef.current) {
       setHeight(sectionRef.current.clientHeight);
-      // const { height } = sectionRef.current.getBoundingClientRect();
-      // setHeight(height);
     }
-  }, [sectionRef, height]);
+  }, [activeTab]);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative mx-auto"
-      style={{ maxWidth: "976px" }}
-    >
-      <div className="absolute z-20 w-full items-center justify-between rounded-3xl bg-white px-60 py-40 duration-100">
+    <section className="relative mx-auto" style={{ maxWidth: "976px" }}>
+      <div
+        ref={sectionRef}
+        className="absolute z-20 w-full items-center justify-between rounded-3xl bg-white px-60 py-40"
+      >
         <div className="mb-40">
           <SectionTitle>Experiences</SectionTitle>
         </div>
@@ -46,7 +41,7 @@ const Experiences = () => {
       </div>
       <div
         style={{ height: height }}
-        className="absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg duration-100"
+        className="absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg"
       />
     </section>
   );

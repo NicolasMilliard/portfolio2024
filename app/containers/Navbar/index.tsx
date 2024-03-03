@@ -31,15 +31,15 @@ const Navbar = () => {
   }, [scrollPosition]);
 
   return (
-    <nav className="sticky top-0">
+    <nav className="sticky top-0 z-50">
       <div
-        className={`absolute z-20 flex ${dynamicHeight} w-full items-center justify-between bg-white px-60 py-40 duration-100 ${dynamicBorder}`}
+        className={`absolute z-20 flex ${dynamicHeight} w-full items-center justify-between bg-white px-60 py-40 duration-200 ${dynamicBorder}`}
       >
         <Logo />
         <Menu />
       </div>
       <div
-        className={`absolute left-0 top-0 z-10 ${dynamicHeight} w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg duration-100`}
+        className={`absolute left-0 top-0 z-10 ${dynamicHeight} w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg`}
       />
     </nav>
   );
