@@ -39,8 +39,8 @@ const Navbar = () => {
         <Menu />
       </div>
       <div
-        className={`absolute left-0 top-0 z-10 ${dynamicHeight} w-full  rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg duration-100`}
-      ></div>
+        className={`absolute left-0 top-0 z-10 ${dynamicHeight} w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg duration-100`}
+      />
     </nav>
   );
 };

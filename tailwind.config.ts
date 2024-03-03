@@ -9,6 +9,7 @@ const config: Config = {
       grey: "#EEEEFF",
       ultramarine: "#4848FC",
       congo_pink: "#FE877A",
+      transparent: "transparent",
     },
     letterSpacing: {
       widest: "10px",
@@ -17,6 +18,7 @@ const config: Config = {
       extralight: "200",
       book: "350",
       normal: "400",
+      semibold: "600",
     },
     extend: {
       spacing: {

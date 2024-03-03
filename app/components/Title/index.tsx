@@ -35,3 +35,13 @@ export const SectionTitle = ({ children }: { children: any }) => {
     </h2>
   );
 };
+
+export const GradientTitle = ({ children }: { children: any }) => {
+  return (
+    <h2
+      className={`${syne.className} font-semibold text-transparent bg-gradient-to-r from-ultramarine to-congo_pink bg-clip-text text-xl`}
+    >
+      {children}
+    </h2>
+  );
+};
