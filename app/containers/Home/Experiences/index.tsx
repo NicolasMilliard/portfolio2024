@@ -26,12 +26,15 @@ const Experiences = () => {
   }, [activeTab]);
 
   return (
-    <section className="relative mx-auto" style={{ maxWidth: "976px" }}>
+    <section
+      className="relative mx-auto"
+      style={{ maxWidth: "976px", marginBottom: `${height}px` }}
+    >
       <div
         ref={sectionRef}
-        className="absolute z-20 w-full items-center justify-between rounded-3xl bg-white px-60 py-40"
+        className="px-15 absolute z-20 w-full items-center justify-between rounded-3xl bg-white py-10"
       >
-        <div className="mb-40">
+        <div className="mb-10">
           <SectionTitle>Experiences</SectionTitle>
         </div>
         <div className="flex gap-20">
@@ -41,7 +44,7 @@ const Experiences = () => {
       </div>
       <div
         style={{ height: height }}
-        className="absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-60 py-40 blur-lg"
+        className="px-15 absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink py-10 blur-lg"
       />
     </section>
   );

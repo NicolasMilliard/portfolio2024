@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <div className="flex items-center">
+    <div className="hidden items-center md:flex">
       <Image
         src="/images/logo.png"
         alt="Nicolas Milliard"
         width={90}
         height={90}
       />
-      <Title>Nicolas Milliard</Title>
+      <Title>Nicolas&nbsp;Milliard</Title>
     </div>
   );
 };

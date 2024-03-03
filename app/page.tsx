@@ -1,5 +1,5 @@
 // Containers
-import { Experiences, Introduction } from "./containers/Home";
+import { CaseStudies, Experiences, Introduction } from "./containers/Home";
 // Types
 import type { Metadata } from "next";
 
@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Introduction />
       <Experiences />
-      <p style={{ marginTop: "300px" }}>Provisoire</p>
+      <CaseStudies />
     </>
   );
 };

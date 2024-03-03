@@ -8,7 +8,7 @@ import { ExperiencesList } from "@app/types/experiences";
 
 const ExperienceDetails = ({ activeTab }: { activeTab: ExperiencesList }) => {
   return (
-    <div>
+    <div className="w-full">
       {experiences.map((experience) => (
         <div key={experience.id}>
           {activeTab === experience.company && (
@@ -21,7 +21,7 @@ const ExperienceDetails = ({ activeTab }: { activeTab: ExperiencesList }) => {
                   {experience.start_date} - {experience.end_date}
                 </p>
               </div>
-              <ul className="list-disc">
+              <ul>
                 {experience.tasks.map((task, index) => (
                   <li key={index}>
                     <Paragraph>{task}</Paragraph>

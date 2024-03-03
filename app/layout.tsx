@@ -13,9 +13,9 @@ export default function RootLayout({
       <body
         className={`${buenosAires.className} overflow-x-hidden bg-gradient-to-r from-ultramarine to-congo_pink`}
       >
-        <div className="relative mx-32 my-40 rounded-3xl bg-grey shadow-xl">
+        <div className="relative mx-8 my-10 rounded-3xl bg-grey shadow-xl">
           <Navbar />
-          <main className="px-60 py-54">{children}</main>
+          <main className="px-15 py-14">{children}</main>
         </div>
       </body>
     </html>

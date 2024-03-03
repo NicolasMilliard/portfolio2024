@@ -22,12 +22,7 @@ const config: Config = {
     },
     extend: {
       spacing: {
-        "32": "32px",
-        "40": "40px",
-        "54": "54px",
-        "60": "60px",
-        "96": "96px",
-        "128": "128px",
+        "15": "60px",
       },
       boxShadow: {
         xl: "0 0 24px rgba(0, 0, 47, 0.3)",
