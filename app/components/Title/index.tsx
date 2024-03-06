@@ -36,10 +36,18 @@ export const SectionTitle = ({ children }: { children: any }) => {
   );
 };
 
+export const SubTitle = ({ children }: { children: any }) => {
+  return (
+    <h2 className={`${syne.className} text-3xl font-semibold text-black`}>
+      {children}
+    </h2>
+  );
+};
+
 export const GradientTitle = ({ children }: { children: any }) => {
   return (
     <h2
-      className={`${syne.className} font-semibold text-transparent bg-gradient-to-r from-ultramarine to-congo_pink bg-clip-text text-xl`}
+      className={`${syne.className} bg-gradient-to-r from-ultramarine to-congo_pink bg-clip-text text-xl font-semibold text-transparent`}
     >
       {children}
     </h2>

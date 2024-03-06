@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <div className="hidden items-center md:flex">
       <Image
-        src="/images/logo.png"
+        src="/images/prism.png"
         alt="Nicolas Milliard"
         width={90}
         height={90}

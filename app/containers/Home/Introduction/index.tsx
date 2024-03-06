@@ -14,7 +14,9 @@ const Introduction = () => {
       />
       <div>
         <MainTitle>Nicolas Milliard</MainTitle>
-        <Title isWidest={true}>Front-End Developer</Title>
+        <div className="my-2">
+          <Title isWidest={true}>Front-End Developer</Title>
+        </div>
         <Paragraph>
           I&apos;m an 8+ years experienced Front-End Developer.
         </Paragraph>

@@ -13,6 +13,7 @@ const Experiences = () => {
   const [activeTab, setActiveTab] = useState<ExperiencesList>(
     ExperiencesList.yper
   );
+  const marginBottom = 128;
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const handleTabChange = (tab: ExperiencesList) => {
@@ -28,11 +29,11 @@ const Experiences = () => {
   return (
     <section
       className="relative mx-auto"
-      style={{ maxWidth: "976px", marginBottom: `${height}px` }}
+      style={{ maxWidth: "976px", marginBottom: `${height + marginBottom}px` }}
     >
       <div
         ref={sectionRef}
-        className="px-15 absolute z-20 w-full items-center justify-between rounded-3xl bg-white py-10"
+        className="absolute z-20 w-full items-center justify-between rounded-3xl bg-white px-15 py-10"
       >
         <div className="mb-10">
           <SectionTitle>Experiences</SectionTitle>
@@ -44,7 +45,7 @@ const Experiences = () => {
       </div>
       <div
         style={{ height: height }}
-        className="px-15 absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink py-10 blur-lg"
+        className="absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-15 py-10 blur-lg"
       />
     </section>
   );

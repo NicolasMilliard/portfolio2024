@@ -23,6 +23,8 @@ const config: Config = {
     extend: {
       spacing: {
         "15": "60px",
+        "30": "120px",
+        "200": "800px",
       },
       boxShadow: {
         xl: "0 0 24px rgba(0, 0, 47, 0.3)",
