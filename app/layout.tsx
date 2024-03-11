@@ -1,13 +1,12 @@
 import "./globals.css";
 import { buenosAires } from "./utils/fonts";
 // Components
+import Footer from "./containers/Footer";
 import Navbar from "./containers/Navbar";
+// Types
+import type { ReactNode } from "react";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
@@ -16,6 +15,7 @@ export default function RootLayout({
         <div className="relative bg-grey md:mx-8 md:my-10 md:rounded-3xl md:shadow-xl">
           <Navbar />
           <main className="px-15 py-14">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
