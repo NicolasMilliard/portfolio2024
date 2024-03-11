@@ -8,11 +8,11 @@ interface TabsProps {
 
 const Tabs = ({ activeTab, onTabChange }: TabsProps) => {
   return (
-    <ul>
+    <ul className="flex gap-4 lg:flex-col lg:gap-0">
       {Object.values(ExperiencesList).map((experience) => (
         <li key={experience}>
           <button
-            className={`border-l-2 border-l-ultramarine py-2 pl-2 text-ultramarine duration-200 ${activeTab === experience ? "opacity-100" : "opacity-20 hover:border-l-congo_pink hover:text-congo_pink hover:opacity-80"}`}
+            className={`border-b-2 border-ultramarine p-1 text-ultramarine duration-200 lg:border-b-0 lg:border-l-2 lg:py-2 lg:pl-2 ${activeTab === experience ? "opacity-100" : "opacity-20 hover:border-l-congo_pink hover:text-congo_pink hover:opacity-80"}`}
             onClick={() => onTabChange(experience)}
           >
             {experience}

@@ -13,15 +13,13 @@ const ExperienceDetails = ({ activeTab }: { activeTab: ExperiencesList }) => {
         <div key={experience.id}>
           {activeTab === experience.company && (
             <>
-              <div className="flex items-center justify-between gap-5">
-                <div className="mb-4">
-                  <GradientTitle>{experience.job_title}</GradientTitle>
-                </div>
+              <div className="mb-4 flex flex-col items-start justify-between gap-5 md:flex-row">
+                <GradientTitle>{experience.job_title}</GradientTitle>
                 <p>
                   {experience.start_date} - {experience.end_date}
                 </p>
               </div>
-              <ul>
+              <ul className="list-disc">
                 {experience.tasks.map((task, index) => (
                   <li key={index}>
                     <Paragraph>{task}</Paragraph>

@@ -5,13 +5,17 @@ import Image from "next/image";
 
 const Introduction = () => {
   return (
-    <section className="mt-8 flex items-center">
-      <Image
-        src="/images/prism.png"
-        alt="Nicolas Milliard"
-        width={512}
-        height={512}
-      />
+    <section className="mt-32 flex items-center justify-center">
+      <div className="hidden md:flex">
+        <Image
+          src="/images/prism.png"
+          alt="Nicolas Milliard"
+          width={360}
+          height={335}
+          quality={100}
+          className="mb-20 mr-40 mt-30"
+        />
+      </div>
       <div>
         <MainTitle>Nicolas Milliard</MainTitle>
         <div className="my-2">

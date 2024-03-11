@@ -28,7 +28,7 @@ const Experiences = () => {
 
   return (
     <section
-      className="relative mx-auto"
+      className="relative mx-auto mt-20 md:mt-30"
       style={{ maxWidth: "976px", marginBottom: `${height + marginBottom}px` }}
     >
       <div
@@ -38,14 +38,14 @@ const Experiences = () => {
         <div className="mb-10">
           <SectionTitle>Experiences</SectionTitle>
         </div>
-        <div className="flex gap-20">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
           <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
           <ExperienceDetails activeTab={activeTab} />
         </div>
       </div>
       <div
         style={{ height: height }}
-        className="absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink px-15 py-10 blur-lg"
+        className="absolute left-0 top-0 z-10 w-full rounded-3xl bg-gradient-to-r from-ultramarine to-congo_pink blur-lg"
       />
     </section>
   );
