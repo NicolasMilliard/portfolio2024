@@ -1,6 +1,8 @@
 import { buenosAires, syne } from "@utils/fonts";
+// Types
+import type { ReactNode } from "react";
 
-export const MainTitle = ({ children }: { children: any }) => {
+export const MainTitle = ({ children }: { children: ReactNode }) => {
   return (
     <h1 className={`${syne.className} text-6xl font-normal text-black`}>
       {children}
@@ -12,7 +14,7 @@ export const Title = ({
   children,
   isWidest,
 }: {
-  children: any;
+  children: ReactNode;
   isWidest?: boolean;
 }) => {
   return (
@@ -28,7 +30,7 @@ export const Title = ({
   );
 };
 
-export const SectionTitle = ({ children }: { children: any }) => {
+export const SectionTitle = ({ children }: { children: ReactNode }) => {
   return (
     <h2 className={`${syne.className} text-4xl font-normal text-black`}>
       {children}
@@ -36,7 +38,7 @@ export const SectionTitle = ({ children }: { children: any }) => {
   );
 };
 
-export const SubTitle = ({ children }: { children: any }) => {
+export const SubTitle = ({ children }: { children: ReactNode }) => {
   return (
     <h2 className={`${syne.className} text-3xl font-semibold text-black`}>
       {children}
@@ -44,7 +46,7 @@ export const SubTitle = ({ children }: { children: any }) => {
   );
 };
 
-export const GradientTitle = ({ children }: { children: any }) => {
+export const GradientTitle = ({ children }: { children: ReactNode }) => {
   return (
     <h2
       className={`${syne.className} bg-gradient-to-r from-ultramarine to-congo_pink bg-clip-text text-xl font-semibold text-transparent`}

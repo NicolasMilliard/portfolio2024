@@ -9,6 +9,7 @@ const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
   const [dynamicBorder, setDynamicBorder] = useState<string>("md:rounded-3xl");
   const [dynamicHeight, setDynamicHeight] = useState<string>("h-32");
+  const [isSmall, setIsSmall] = useState<boolean>(false);
 
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
@@ -20,9 +21,11 @@ const Navbar = () => {
     if (scrollPosition > 40) {
       setDynamicBorder("md:rounded-b-3xl");
       setDynamicHeight("h-24");
+      setIsSmall(true);
     } else {
       setDynamicBorder("md:rounded-3xl");
       setDynamicHeight("h-32");
+      setIsSmall(false);
     }
 
     return () => {
@@ -35,8 +38,8 @@ const Navbar = () => {
       <div
         className={`absolute z-20 flex ${dynamicHeight} w-full items-center justify-between bg-white px-4 duration-200 md:px-15 ${dynamicBorder}`}
       >
-        <Logo />
-        <Menu />
+        <Logo isSmall={isSmall} />
+        <Menu isTextWhite={false} />
       </div>
       <div
         className={`absolute left-0 top-0 z-10 ${dynamicHeight} w-full bg-gradient-to-r from-ultramarine to-congo_pink blur-lg md:rounded-3xl`}

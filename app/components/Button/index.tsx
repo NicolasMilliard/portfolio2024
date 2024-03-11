@@ -1,6 +1,8 @@
 import { syne } from "@utils/fonts";
+// Types
+import type { ReactNode } from "react";
 
-export const PrimaryButton = ({ children }: any) => {
+export const PrimaryButton = ({ children }: { children: ReactNode }) => {
   return (
     <div className="group relative inline-block">
       <button

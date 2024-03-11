@@ -21,6 +21,20 @@ const Experiences = () => {
   };
 
   useEffect(() => {
+    const resizeObserver = new ResizeObserver(() => {
+      sectionRef.current && setHeight(sectionRef.current.clientHeight);
+    });
+
+    const currentSectionRef = sectionRef.current;
+
+    currentSectionRef && resizeObserver.observe(currentSectionRef);
+
+    return () => {
+      currentSectionRef && resizeObserver.unobserve(currentSectionRef);
+    };
+  }, []);
+
+  useEffect(() => {
     if (sectionRef.current) {
       setHeight(sectionRef.current.clientHeight);
     }
@@ -28,7 +42,7 @@ const Experiences = () => {
 
   return (
     <section
-      className="relative mx-auto mt-20 md:mt-30"
+      className="relative mx-auto mt-10"
       style={{ maxWidth: "976px", marginBottom: `${height + marginBottom}px` }}
     >
       <div

@@ -5,13 +5,13 @@ import { usePathname } from "next/navigation";
 // Components
 import MenuLink from "./MenuLink";
 
-const Menu = () => {
+const Menu = ({ isTextWhite }: { isTextWhite: boolean }) => {
   const pathName = usePathname();
   const formattedPathName = pathName === "/" ? "home" : pathName.slice(1);
 
   return (
     <menu
-      className={`${syne.className} flex w-full items-center justify-center gap-4 md:justify-end md:gap-10`}
+      className={`${syne.className} flex w-full items-center justify-center gap-4 md:justify-end md:gap-10 ${isTextWhite ? "text-white" : "text-black"}`}
     >
       <li>
         <MenuLink path={formattedPathName} target="home" textLink="Home" />

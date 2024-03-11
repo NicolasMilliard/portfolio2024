@@ -1,13 +1,13 @@
 // Components
-import { SectionTitle, SubTitle } from "@components/Title";
-import { GradientParagraph, Paragraph } from "@app/components/Text";
 import { PrimaryButton } from "@app/components/Button";
+import { GradientParagraph, Paragraph } from "@app/components/Text";
+import { SectionTitle, SubTitle } from "@components/Title";
 // Data
 import { case_studies } from "@app/data/case_studies";
 
 const CaseStudies = () => {
   return (
-    <section className="mx-30">
+    <section className="my-20">
       <SectionTitle>Case Studies</SectionTitle>
       <div>
         {case_studies.map((case_study) => (
