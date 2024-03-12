@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Introduction = () => {
   return (
-    <section className="mt-32 flex items-center justify-center gap-10">
+    <section className="flex items-center justify-center gap-10">
       <div className="hidden md:block">
         <Image
           src="/images/prism.png"
