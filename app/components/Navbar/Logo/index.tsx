@@ -6,7 +6,7 @@ const Logo = ({ isSmall }: { isSmall: boolean }) => {
   return (
     <div className="hidden md:flex md:items-center">
       <Image
-        src="/images/prism.png"
+        src="/images/assets/prism.png"
         alt="Nicolas Milliard"
         width={isSmall ? 60 : 90}
         height={isSmall ? 56 : 84}

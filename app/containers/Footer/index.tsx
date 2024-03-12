@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="flex items-center justify-center gap-20 rounded-b-3xl bg-black py-8">
       <Image
-        src="/images/prism.png"
+        src="/images/assets/prism.png"
         alt="Nicolas Milliard"
         width={90}
         height={84}

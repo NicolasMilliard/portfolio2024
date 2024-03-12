@@ -8,7 +8,7 @@ const Introduction = () => {
     <section className="flex items-center justify-center gap-10">
       <div className="hidden md:block">
         <Image
-          src="/images/prism.png"
+          src="/images/assets/prism.png"
           alt="Nicolas Milliard"
           width={360}
           height={335}
