@@ -21,7 +21,7 @@ const ExperienceDetails = ({ activeTab }: { activeTab: ExperiencesList }) => {
               </div>
               <ul className="list-disc">
                 {experience.tasks.map((task, index) => (
-                  <li key={index}>
+                  <li key={index} className="ml-4">
                     <Paragraph>{task}</Paragraph>
                   </li>
                 ))}

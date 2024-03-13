@@ -8,7 +8,7 @@ interface TabsProps {
 
 const Tabs = ({ activeTab, onTabChange }: TabsProps) => {
   return (
-    <ul className="flex gap-4 lg:flex-col lg:gap-0">
+    <ul className="flex gap-4 overflow-x-scroll rounded-lg px-4 py-2 sm:overflow-x-visible lg:flex-col lg:gap-0">
       {Object.values(ExperiencesList).map((experience) => (
         <li key={experience}>
           <button

@@ -2,13 +2,18 @@
 import { Paragraph } from "@components/Text";
 import { MainTitle, Title } from "@components/Title";
 import Image from "next/image";
+// Types
+import { CaseStudiesImages } from "../CaseStudies/CaseStudyImage";
 
 const Introduction = () => {
+  const images = [...Object.keys(CaseStudiesImages), "prism"];
+  const randomImage = images[Math.floor(Math.random() * images.length)];
+
   return (
-    <section className="flex items-center justify-center gap-10">
-      <div className="hidden md:block">
+    <section className="mb-32 flex items-center justify-center gap-20 lg:mt-32 lg:px-20 xl:px-40">
+      <div className="hidden lg:block">
         <Image
-          src="/images/assets/prism.png"
+          src={`/images/assets/${randomImage}.png`}
           alt="Nicolas Milliard"
           width={360}
           height={335}

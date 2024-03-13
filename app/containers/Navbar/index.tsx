@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50">
       <div
-        className={`absolute z-20 flex ${dynamicHeight} w-full items-center justify-between bg-white px-4 duration-200 md:px-15 ${dynamicBorder}`}
+        className={`absolute z-20 flex ${dynamicHeight} w-full items-center justify-between bg-white px-8 duration-200 md:px-15 lg:justify-center lg:px-20 xl:px-40 ${dynamicBorder}`}
       >
         <Logo isSmall={isSmall} />
         <Menu isTextWhite={false} />

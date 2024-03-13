@@ -1,7 +1,7 @@
 // Components
 import Image from "next/image";
 
-enum CaseStudiesImages {
+export enum CaseStudiesImages {
   cube = "cube",
   spring = "spring",
   hexagon = "hexagon",
@@ -18,10 +18,10 @@ const CaseStudyImage = ({ index, title }: { index: number; title: string }) => {
     <Image
       src={`/images/assets/${images[index]}.png`}
       alt={title}
-      width={512}
-      height={512}
+      width={360}
+      height={360}
       quality={100}
-      className="hidden lg:block"
+      className="hidden xl:block"
     />
   );
 };

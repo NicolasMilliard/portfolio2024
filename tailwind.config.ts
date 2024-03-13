@@ -24,7 +24,9 @@ const config: Config = {
       spacing: {
         "15": "60px",
         "30": "120px",
+        "128": "512px",
         "200": "800px",
+        "244": "976px",
       },
       boxShadow: {
         xl: "0 0 24px rgba(0, 0, 47, 0.3)",
@@ -43,6 +45,9 @@ const config: Config = {
             animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
           },
         },
+      },
+      screens: {
+        xs: "375px",
       },
     },
   },

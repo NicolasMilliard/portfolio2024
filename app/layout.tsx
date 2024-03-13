@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <div className="relative bg-grey md:mx-8 md:my-10 md:rounded-3xl md:shadow-xl">
           <Navbar />
-          <main className="px-15 pb-14 pt-48">{children}</main>
+          <main className="px-8 pb-14 pt-48 md:px-15">{children}</main>
           <Footer />
         </div>
       </body>
