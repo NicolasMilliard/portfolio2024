@@ -25,7 +25,7 @@ const CaseStudies = () => {
                 <div className="max-w-128">
                   <Paragraph>{description}</Paragraph>
                 </div>
-                <div className="mt-6">
+                <div className="mt-8">
                   <PrimaryLink href={`case-studies/${link}`} target="_self">
                     View the case study
                   </PrimaryLink>

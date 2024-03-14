@@ -9,7 +9,7 @@ const Footer = () => {
   const linkedInIcon = "/images/social/linkedin-logo.svg";
 
   return (
-    <footer className="flex flex-col items-center justify-center gap-20 bg-black py-8 md:flex-row md:rounded-b-3xl">
+    <footer className="flex flex-col items-center justify-center gap-10 bg-black py-8 md:flex-row md:rounded-b-3xl">
       <Image
         src="/images/assets/prism.png"
         alt="Nicolas Milliard"

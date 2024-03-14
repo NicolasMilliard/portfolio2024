@@ -25,7 +25,7 @@ export const PrimaryLink = ({ href, target, children }: LinkProps) => {
       >
         {children}
       </Link>
-      <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-ultramarine to-congo_pink opacity-0 blur-lg duration-200 group-hover:opacity-100"></div>
+      <div className="absolute inset-0 -top-2 h-10 rounded-xl bg-gradient-to-br from-ultramarine to-congo_pink opacity-0 blur-lg duration-200 group-hover:opacity-100"></div>
     </div>
   );
 };
