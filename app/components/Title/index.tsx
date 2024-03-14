@@ -40,9 +40,9 @@ export const SectionTitle = ({ children }: { children: ReactNode }) => {
 
 export const SubTitle = ({ children }: { children: ReactNode }) => {
   return (
-    <h2 className={`${syne.className} text-3xl font-semibold text-black`}>
+    <h3 className={`${syne.className} text-3xl font-semibold text-black`}>
       {children}
-    </h2>
+    </h3>
   );
 };
 

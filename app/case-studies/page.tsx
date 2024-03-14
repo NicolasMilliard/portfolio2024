@@ -1,3 +1,5 @@
+// Containers
+import { CaseStudies } from "@app/containers/Home";
 // Types
 import type { Metadata } from "next";
 
@@ -6,8 +8,8 @@ export const metadata: Metadata = {
   description: "My latest case studies.",
 };
 
-const CaseStudies = () => {
-  return <div>CaseStudies</div>;
+const CaseStudiesPage = () => {
+  return <CaseStudies />;
 };
 
-export default CaseStudies;
+export default CaseStudiesPage;

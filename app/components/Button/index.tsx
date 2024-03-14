@@ -1,4 +1,5 @@
 import { syne } from "@utils/fonts";
+// Components
 // Types
 import type { ReactNode } from "react";
 
@@ -14,5 +15,3 @@ export const PrimaryButton = ({ children }: { children: ReactNode }) => {
     </div>
   );
 };
-
-export default PrimaryButton;

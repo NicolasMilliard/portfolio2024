@@ -1,5 +1,5 @@
+import { SocialLink } from "@app/components/Link";
 import Menu from "@app/components/Navbar/Menu";
-import SocialLink from "@app/components/SocialLink";
 import Image from "next/image";
 
 const Footer = () => {
@@ -20,8 +20,12 @@ const Footer = () => {
       />
       <div className="flex flex-col gap-8">
         <div className="flex justify-center gap-30 text-white">
-          <SocialLink text="GitHub" link={githubLink} icon={githubIcon} />
-          <SocialLink text="LinkedIn" link={linkedInLink} icon={linkedInIcon} />
+          <SocialLink href={githubLink} target="_blank" icon={githubIcon}>
+            GitHub
+          </SocialLink>
+          <SocialLink href={linkedInLink} target="_blank" icon={linkedInIcon}>
+            LinkedIn
+          </SocialLink>
         </div>
         <Menu isTextWhite={true} />
       </div>

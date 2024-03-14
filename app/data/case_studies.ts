@@ -1,6 +1,7 @@
 export const case_studies = [
   {
     id: "0",
+    link: "taaask",
     title: "Taaask",
     tech_stack: "React Native - Expo - Recoil - TypeScript",
     description:
@@ -8,6 +9,7 @@ export const case_studies = [
   },
   {
     id: "1",
+    link: "smart-vote",
     title: "Smart Vote",
     tech_stack: "Next JS - Hardhat - JavaScript",
     description:
@@ -15,6 +17,7 @@ export const case_studies = [
   },
   {
     id: "2",
+    link: "kopo",
     title: "Kopo",
     tech_stack: "Next JS - Hardhat - JavaScript",
     description:
