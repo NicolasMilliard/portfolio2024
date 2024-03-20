@@ -30,9 +30,17 @@ export const Title = ({
   );
 };
 
-export const SectionTitle = ({ children }: { children: ReactNode }) => {
+export const SectionTitle = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: ReactNode;
+}) => {
   return (
-    <h2 className={`${syne.className} text-4xl font-normal text-black`}>
+    <h2
+      className={`${syne.className} text-4xl font-normal text-black ${className}`}
+    >
       {children}
     </h2>
   );

@@ -15,7 +15,7 @@ const CaseStudies = () => {
           const isOdd = index % 2 === 1;
 
           return (
-            <div key={id} className="mx-auto my-16 flex items-center gap-40">
+            <div key={id} className="my-16 flex items-center gap-40">
               {isOdd && <CaseStudyImage index={index} title={title} />}
               <div>
                 <SubTitle>{title}</SubTitle>

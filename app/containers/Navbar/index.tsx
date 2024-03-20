@@ -34,9 +34,9 @@ const Navbar = () => {
   }, [scrollPosition]);
 
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 w-full">
       <div
-        className={`absolute z-20 flex ${dynamicHeight} w-full items-center justify-between bg-white px-8 duration-200 md:px-15 lg:justify-center lg:px-20 xl:px-40 ${dynamicBorder}`}
+        className={`relative z-20 flex ${dynamicHeight} w-full items-center justify-center gap-16 bg-white px-8 duration-200 md:px-15 lg:justify-between lg:px-20 xl:px-60 ${dynamicBorder}`}
       >
         <Logo isSmall={isSmall} />
         <Menu isTextWhite={false} />

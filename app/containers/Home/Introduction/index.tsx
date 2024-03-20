@@ -10,7 +10,7 @@ const Introduction = () => {
   const randomImage = images[Math.floor(Math.random() * images.length)];
 
   return (
-    <section className="mb-32 flex items-center justify-center gap-20 lg:mt-32 lg:px-20 xl:px-40">
+    <section className="mb-32 flex items-center justify-center gap-20 lg:px-20 xl:px-40">
       <div className="hidden lg:block">
         <Image
           src={`/images/assets/${randomImage}.png`}

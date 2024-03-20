@@ -11,7 +11,7 @@ const Menu = ({ isTextWhite }: { isTextWhite: boolean }) => {
 
   return (
     <menu
-      className={`${syne.className} flex w-full items-center justify-center gap-4 md:justify-end md:gap-10 ${isTextWhite ? "text-white" : "text-black"}`}
+      className={`${syne.className} flex items-center justify-center gap-4 md:justify-end md:gap-10 ${isTextWhite ? "text-white" : "text-black"}`}
     >
       <li>
         <MenuLink path={formattedPathName} target="home" textLink="Home" />
