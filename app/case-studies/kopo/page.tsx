@@ -20,11 +20,11 @@ const Kopo = () => {
         <MainTitle>Kopo</MainTitle>
         <Title>Your energy renovation made easy</Title>
         <div className="flex items-center gap-8">
-          <PrimaryLink href="" target="_blank">
+          <PrimaryLink href="https://kopo.vercel.app/" target="_blank">
             Visit project
           </PrimaryLink>
           <SocialLink
-            href="https://kopo.vercel.app/"
+            href="https://github.com/NicolasMilliard/kopo"
             target="_blank"
             icon={githubIcon}
           >
@@ -43,8 +43,8 @@ const Kopo = () => {
       <section className="mb-20 flex flex-col items-center gap-6">
         <SectionTitle className="lg:w-200">Introduction</SectionTitle>
         <Paragraph>
-          Kopo is an innovative dApp that allows individuals to simplify the
-          process of applying for Energy Saving Certificates (ESC). With Kopo,
+          Kopo is an innovative dApp that allows users to simplify the process
+          of applying for Energy Saving Certificates (ESC). With Kopo,
           beneficiaries can follow in real time the progress of their
           application from the platform. The particularity of Kopo is that all
           the files created are stored on the blockchain, thus offering
@@ -116,7 +116,7 @@ const Kopo = () => {
           connectivity and serve as a global state manager.
         </Paragraph>
         <Paragraph>
-          The backend development utilizes Hardhat, a platform for smart
+          The blockchain development utilizes Hardhat, a platform for smart
           contract development, with some contracts being Upgradeable for future
           modifications. Security features are provided by OpenZeppelin, while
           Chai is used for unit testing and Eth-gas-reporter tracks gas costs on

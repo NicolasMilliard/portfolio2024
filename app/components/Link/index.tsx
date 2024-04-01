@@ -21,7 +21,7 @@ export const PrimaryLink = ({ href, target, children }: LinkProps) => {
       <Link
         href={href}
         target={target}
-        className={`${syne.className} relative z-10 rounded-xl bg-black px-6 py-3 font-semibold text-grey`}
+        className={`${syne.className} text-grey-100 relative z-10 rounded-xl bg-black px-6 py-3 font-semibold`}
       >
         {children}
       </Link>
@@ -36,7 +36,7 @@ export const SecondaryLink = ({ href, target, children }: LinkProps) => {
       <Link
         href={href}
         target={target}
-        className={`${syne.className} relative z-10 rounded-xl bg-black px-6 py-3 font-semibold text-grey`}
+        className={`${syne.className} text-grey-100 relative z-10 rounded-xl bg-black px-6 py-3 font-semibold`}
       >
         {children}
       </Link>

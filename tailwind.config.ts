@@ -4,11 +4,15 @@ const config: Config = {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     colors: {
-      black: "#00002F",
-      white: "#FFFFFF",
-      grey: "#EEEEFF",
-      ultramarine: "#4848FC",
-      congo_pink: "#FE877A",
+      black: "#00002f",
+      white: "#ffffff",
+      grey: {
+        100: "#eeeeff",
+        400: "#e0e0ff",
+        700: "#ccccff",
+      },
+      ultramarine: "#4848fc",
+      congo_pink: "#fe877a",
       transparent: "transparent",
     },
     letterSpacing: {
