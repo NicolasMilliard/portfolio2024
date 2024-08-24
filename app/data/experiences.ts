@@ -5,6 +5,7 @@ export const experiences = [
     job_title: "Front-End Developer",
     start_date: "July 2016",
     end_date: "Nov. 2021",
+    location: "Fréjus, France",
     tasks: [
       "Lead architecture, design, and development of 15+ websites and applications",
       "Develop websites for 4 international business partners",
@@ -20,6 +21,7 @@ export const experiences = [
     job_title: "Front-End Developer",
     start_date: "Nov. 2017",
     end_date: "Aug. 2023",
+    location: "Sainte-Maxime, France",
     tasks: [
       "Develop websites and dApps for many companies (Education, Health, Food, New Technologies...)",
       "Implement rich user experiences by creating new features utilizing HTML, CSS, JavaScript, and TypeScript",
@@ -33,6 +35,7 @@ export const experiences = [
     job_title: "Front-End Developer",
     start_date: "Aug. 2023",
     end_date: "Today",
+    location: "Fully Remote",
     tasks: [
       "Develop and maintain applications with React JS",
       "Implement rich user experiences by creating new features utilizing HTML, CSS, and TypeScript",
