@@ -42,7 +42,7 @@ const Experiences = () => {
 
   return (
     <section
-      className="max-w-244 relative mx-auto"
+      className="relative mx-auto max-w-244"
       style={{ height: height, marginBottom: marginBottom }}
     >
       <div

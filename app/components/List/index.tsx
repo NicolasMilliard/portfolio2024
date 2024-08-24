@@ -1,11 +1,19 @@
-export const List = ({children}: {children: React.ReactNode}) => {
-    return (
-        <ul>{children}</ul>
-    )
-}
+export const List = ({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return <ul className={className}>{children}</ul>;
+};
 
-export const ListItem = ({children}: {children: React.ReactNode}) => {
-    return (
-        <li>{children}</li>
-    )
-}
+export const ListItem = ({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return <li className={`font-book ${className}`}>{children}</li>;
+};

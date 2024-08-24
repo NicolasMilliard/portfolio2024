@@ -1,71 +1,52 @@
+// Data
+import { experiences } from "@app/data/experiences";
 // Components
 import { List, ListItem } from "@app/components/List";
+import { Quote, Sidebar } from "@app/containers/Resume";
 import { Paragraph } from "@components/Text";
-import { GradientTitle, MainTitle, Title } from "@components/Title";
+import { GradientTitle, MainTitle, SubTitle, Title } from "@components/Title";
+
+const newestToOldest = experiences.reverse();
 
 const Resume = () => {
   return (
     <>
-      <MainTitle>Nicolas Milliard</MainTitle>
-      <Title>Front-End Developer</Title>
-      <section>
-        <GradientTitle>Education</GradientTitle>
-        <Paragraph>
-          BSC Degree Computer Science<br />
-          UFR Ingémedia<br />
-          Setp. 2015 - June 2016
-        </Paragraph>
-        <Paragraph>
-          Associate&apos;s Degree Computer Science<br />
-          IUT MMI<br />
-          Setp. 2013 - June 2015
-        </Paragraph>
-      </section>
-      <section>
-        <GradientTitle>Skills</GradientTitle>
-        <List>
-          <ListItem>JavaScript (ES6)</ListItem>
-          <ListItem>TypeScript</ListItem>
-          <ListItem>HTML 5</ListItem>
-          <ListItem>CSS 3</ListItem>
-          <ListItem>Solidity</ListItem>
-        </List>
-        <List>
-          <ListItem>React JS</ListItem>
-          <ListItem>React Native</ListItem>
-          <ListItem>Redux</ListItem>
-          <ListItem>Recoil JS</ListItem>
-          <ListItem>Jest</ListItem>
-        </List>
-        <List>
-          <ListItem>Hardhat</ListItem>
-          <ListItem>Truffle</ListItem>
-          <ListItem>Viewm</ListItem>
-          <ListItem>Ethers.js</ListItem>
-        </List>
-      </section>
-      <section>
-        <GradientTitle>Certifications</GradientTitle>
-        <Paragraph>
-          Blockchain Developer<br />
-          Alyra School<br />
-          2022
-        </Paragraph>
-        <Paragraph>
-          React Native<br />
-          OpenClassrooms<br />
-          2021
-        </Paragraph>
-      </section>
-      <section>
-        <GradientTitle>Languages</GradientTitle>
-        <Paragraph>
-          French (native)
-        </Paragraph>
-        <Paragraph>
-          English (fluent)
-        </Paragraph>
-      </section>
+      <div className="mb-10 flex flex-col gap-4">
+        <MainTitle>Nicolas Milliard</MainTitle>
+        <Title isWidest={true}>Front-End Developer</Title>
+      </div>
+      <div className="flex flex-col md:flex-row">
+        <Sidebar />
+        <div>
+          <Quote />
+          <section>
+            <SubTitle>Work Experience</SubTitle>
+            <div>
+              {newestToOldest.map((experience) => (
+                <div key={experience.id}>
+                  <>
+                    <div className="mb-4 flex flex-col items-start justify-between gap-5">
+                      <SubTitle>{experience.company}</SubTitle>
+                      <GradientTitle>{experience.job_title}</GradientTitle>
+                      <p>
+                        {experience.start_date} - {experience.end_date} |{" "}
+                        {experience.location}
+                      </p>
+                    </div>
+                    <List className="list-disc">
+                      {experience.tasks.map((task, index) => (
+                        <ListItem key={index} className="ml-4">
+                          <Paragraph>{task}</Paragraph>
+                        </ListItem>
+                      ))}
+                    </List>
+                  </>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
     </>
   );
 };
