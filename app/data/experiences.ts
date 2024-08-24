@@ -37,7 +37,7 @@ export const experiences = [
     end_date: "Today",
     location: "Fully Remote",
     tasks: [
-      "Develop and maintain applications with React JS",
+      "Develop and maintain applications with React JS and Next JS",
       "Implement rich user experiences by creating new features utilizing HTML, CSS, and TypeScript",
       "Integrate and test new features based on user feedback",
       "Develop and maintain new products, technical documentation, and workflows",
