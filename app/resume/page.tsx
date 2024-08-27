@@ -5,6 +5,13 @@ import { List, ListItem } from "@app/components/List";
 import { Quote, Sidebar } from "@app/containers/Resume";
 import { Paragraph } from "@components/Text";
 import { GradientTitle, MainTitle, SubTitle, Title } from "@components/Title";
+// Types
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Front-End Developer | Nicolas Milliard",
+  description: "My resume",
+};
 
 const newestToOldest = experiences.reverse();
 
