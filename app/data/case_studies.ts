@@ -1,7 +1,7 @@
 export const case_studies = [
   {
     id: "0",
-    link: "taaask",
+    link: null,
     title: "Taaask",
     tech_stack: "React Native - Expo - Recoil - TypeScript",
     description:

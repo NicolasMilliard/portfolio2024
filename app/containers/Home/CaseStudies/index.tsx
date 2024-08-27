@@ -1,4 +1,5 @@
 // Components
+import { PrimaryButton } from "@app/components/Button";
 import { PrimaryLink } from "@app/components/Link";
 import { GradientParagraph, Paragraph } from "@app/components/Text";
 import { SectionTitle, SubTitle } from "@components/Title";
@@ -26,9 +27,15 @@ const CaseStudies = () => {
                   <Paragraph>{description}</Paragraph>
                 </div>
                 <div className="mt-8">
-                  <PrimaryLink href={`case-studies/${link}`} target="_self">
-                    View the case study
-                  </PrimaryLink>
+                  {link ? (
+                    <PrimaryLink href={`case-studies/${link}`} target="_self">
+                      View the case study
+                    </PrimaryLink>
+                  ) : (
+                    <PrimaryButton disabled={link === null}>
+                      View the case study
+                    </PrimaryButton>
+                  )}
                 </div>
               </div>
               {!isOdd && <CaseStudyImage index={index} title={title} />}

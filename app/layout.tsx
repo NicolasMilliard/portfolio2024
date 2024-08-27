@@ -12,9 +12,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${buenosAires.className} overflow-x-hidden bg-gradient-to-r from-ultramarine to-congo_pink`}
       >
-        <div className="relative bg-grey md:mx-8 md:my-10 md:rounded-3xl md:shadow-xl">
+        <div className="bg-grey-100 relative md:mx-8 md:my-10 md:rounded-3xl md:shadow-xl">
           <Navbar />
-          <main className="px-8 pb-14 pt-30 md:px-15">{children}</main>
+          <main className="px-8 pb-14 pt-15 md:px-15 md:pt-30">{children}</main>
           <Footer />
         </div>
       </body>
