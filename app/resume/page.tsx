@@ -10,24 +10,29 @@ const newestToOldest = experiences.reverse();
 
 const Resume = () => {
   return (
-    <>
-      <div className="mb-10 flex flex-col gap-4">
+    <div className="flex flex-col lg:px-20 xl:px-40">
+      <section className="mb-10 flex flex-col gap-4">
         <MainTitle>Nicolas Milliard</MainTitle>
         <Title isWidest={true}>Front-End Developer</Title>
-      </div>
-      <div className="flex flex-col md:flex-row">
+      </section>
+      <div className="flex flex-col md:flex-row md:gap-10">
         <Sidebar />
         <div>
           <Quote />
           <section>
             <SubTitle>Work Experience</SubTitle>
-            <div>
+            <div className="mt-10">
               {newestToOldest.map((experience) => (
-                <div key={experience.id}>
+                <div key={experience.id} className="mb-10">
                   <>
-                    <div className="mb-4 flex flex-col items-start justify-between gap-5">
-                      <SubTitle>{experience.company}</SubTitle>
-                      <GradientTitle>{experience.job_title}</GradientTitle>
+                    <div className="mb-4 flex flex-col items-start justify-between">
+                      <div className="my-4 flex flex-col gap-2 md:flex-row md:items-center">
+                        <SubTitle>{experience.company}</SubTitle>
+                        <div className="hidden h-full w-0.5 rounded bg-black md:block">
+                          &nbsp;
+                        </div>
+                        <GradientTitle>{experience.job_title}</GradientTitle>
+                      </div>
                       <p>
                         {experience.start_date} - {experience.end_date} |{" "}
                         {experience.location}
@@ -47,7 +52,7 @@ const Resume = () => {
           </section>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

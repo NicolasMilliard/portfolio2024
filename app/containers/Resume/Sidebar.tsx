@@ -4,8 +4,8 @@ import { GradientTitle } from "@app/components/Title";
 
 const Sidebar = () => {
   return (
-    <div className="mb-10 hidden max-w-52 flex-col gap-6 xs:flex">
-      <div className="flex flex-col gap-4 md:flex-col md:gap-6">
+    <div className="mb-10 hidden gap-6 xs:flex xs:flex-col lg:max-w-52">
+      <div className="flex flex-col gap-8 sm:flex-row md:flex-col md:gap-10">
         <section>
           <GradientTitle>Education</GradientTitle>
           <div className="flex flex-col gap-2">
