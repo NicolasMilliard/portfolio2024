@@ -8,6 +8,11 @@ import { GradientTitle, MainTitle, SubTitle, Title } from "@components/Title";
 
 const newestToOldest = experiences.reverse();
 
+// Data
+// Components
+
+const newestToOldest = experiences.reverse();
+
 const Resume = () => {
   return (
     <div className="flex flex-col lg:px-20 xl:px-40">
