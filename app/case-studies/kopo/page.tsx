@@ -1,4 +1,5 @@
 // Components
+import { githubLogo } from '@app/components/Icons';
 import { PrimaryLink, SocialLink } from '@app/components/Link';
 import { GradientParagraph, Paragraph } from '@app/components/Text';
 import { MainTitle, SectionTitle, Title } from '@app/components/Title';
@@ -10,8 +11,6 @@ export const metadata: Metadata = {
   title: 'Kopo | Nicolas Milliard',
   description: 'Kopo case study.',
 };
-
-const githubIcon = '/images/social/github-logo.svg';
 
 const Kopo = () => {
   return (
@@ -26,7 +25,7 @@ const Kopo = () => {
           <SocialLink
             href="https://github.com/NicolasMilliard/kopo"
             target="_blank"
-            icon={githubIcon}
+            icon={githubLogo}
           >
             Repository
           </SocialLink>

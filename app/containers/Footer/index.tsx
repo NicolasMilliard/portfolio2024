@@ -1,3 +1,4 @@
+import { githubLogo, linkedinLogo, npmjsLogo } from '@app/components/Icons';
 import { SocialLink } from '@app/components/Link';
 import Menu from '@app/components/Navbar/Menu';
 import Image from 'next/image';
@@ -6,17 +7,17 @@ const SocialLinks = [
   {
     name: 'GitHub',
     link: 'https://github.com/NicolasMilliard',
-    icon: '/images/social/github-logo.svg',
+    icon: githubLogo,
   },
   {
     name: 'LinkedIn',
     link: 'https://fr.linkedin.com/in/nicolas-milliard',
-    icon: '/images/social/linkedin-logo.svg',
+    icon: linkedinLogo,
   },
   {
     name: 'Npmjs',
     link: 'https://www.npmjs.com/~nicolasmilliard',
-    icon: '/images/social/npmjs-logo.svg',
+    icon: npmjsLogo,
   },
 ];
 

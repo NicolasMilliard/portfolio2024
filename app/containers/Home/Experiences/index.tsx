@@ -5,17 +5,15 @@ import { useEffect, useRef, useState } from 'react';
 import { SectionTitle } from '@components/Title';
 import ExperienceDetails from './ExperienceDetails';
 import Tabs from './Tabs';
-// Types
-import { ExperiencesList } from '@app/types/experiences';
+
+const defaultTab = 'yper_lead_front_end_developer';
 
 const Experiences = () => {
   const [height, setHeight] = useState<number>(0);
-  const [activeTab, setActiveTab] = useState<ExperiencesList>(
-    ExperiencesList.yper,
-  );
+  const [activeTab, setActiveTab] = useState<string>(defaultTab);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const handleTabChange = (tab: ExperiencesList) => {
+  const handleTabChange = (tab: string) => {
     setActiveTab(tab);
   };
 

@@ -8,8 +8,8 @@ const Quote = () => {
         year as a Blockchain Developer.
       </Paragraph>
       <Paragraph>
-        I have a good experience with many tools in Web 2 (React JS, React
-        Native, Redux, Jest...) and Web 3 (Hardhat, Wagmi, Ethers.js...).
+        I have a good experience with many tools in Web 2 (React JS, Next JS,
+        Redux, Jest...) and Web 3 (Hardhat, Foundry, Wagmi...).
       </Paragraph>
       <Paragraph>
         I am technically demanding, autonomous, proactive, curious, humble and

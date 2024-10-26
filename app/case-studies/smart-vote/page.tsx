@@ -1,4 +1,5 @@
 // Components
+import { githubLogo } from '@app/components/Icons';
 import { PrimaryLink, SocialLink } from '@app/components/Link';
 import { GradientParagraph, Paragraph } from '@app/components/Text';
 import { MainTitle, SectionTitle, Title } from '@app/components/Title';
@@ -11,8 +12,6 @@ export const metadata: Metadata = {
   title: 'SmartVote | Nicolas Milliard',
   description: 'SmartVote case study.',
 };
-
-const githubIcon = '/images/social/github-logo.svg';
 
 const SmartVote = () => {
   return (
@@ -27,7 +26,7 @@ const SmartVote = () => {
           <SocialLink
             href="https://github.com/NicolasMilliard/SmartVote"
             target="_blank"
-            icon={githubIcon}
+            icon={githubLogo}
           >
             Repository
           </SocialLink>

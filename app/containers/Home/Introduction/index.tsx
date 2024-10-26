@@ -25,7 +25,7 @@ const Introduction = () => {
           I&apos;m an 8+ years experienced Front-End Developer.
         </Paragraph>
         <Paragraph>
-          I usually work with React JS and React Native in TypeScript.
+          I usually work with React JS and Next JS in TypeScript.
         </Paragraph>
       </div>
     </section>
