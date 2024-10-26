@@ -26,11 +26,12 @@ const config: Config = {
     },
     extend: {
       spacing: {
-        '15': '60px',
-        '30': '120px',
-        '128': '512px',
-        '200': '800px',
-        '244': '976px',
+        '15': '3.75rem', // 60px
+        '30': '7.5rem', // 120px
+        '32': '8rem', // 128px
+        '128': '32rem', // 512px
+        '200': '50rem', // 800px
+        '244': '61rem', // 976px
       },
       boxShadow: {
         xl: '0 0 24px rgba(0, 0, 47, 0.3)',
@@ -55,6 +56,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
 };
 export default config;
