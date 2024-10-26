@@ -1,10 +1,10 @@
 // Components
-import { Paragraph } from "@components/Text";
-import { GradientTitle } from "@components/Title";
+import { Paragraph } from '@components/Text';
+import { GradientTitle } from '@components/Title';
 // Data
-import { experiences } from "@app/data/experiences";
+import { experiences } from '@app/data/experiences';
 // Types
-import { ExperiencesList } from "@app/types/experiences";
+import { ExperiencesList } from '@app/types/experiences';
 
 const ExperienceDetails = ({ activeTab }: { activeTab: ExperiencesList }) => {
   return (

@@ -1,6 +1,6 @@
 export const List = ({
   children,
-  className = "",
+  className = '',
 }: {
   children: React.ReactNode;
   className?: string;
@@ -10,7 +10,7 @@ export const List = ({
 
 export const ListItem = ({
   children,
-  className = "",
+  className = '',
 }: {
   children: React.ReactNode;
   className?: string;

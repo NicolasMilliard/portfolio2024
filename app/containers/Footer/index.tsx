@@ -1,26 +1,26 @@
-import { SocialLink } from "@app/components/Link";
-import Menu from "@app/components/Navbar/Menu";
-import Image from "next/image";
+import { SocialLink } from '@app/components/Link';
+import Menu from '@app/components/Navbar/Menu';
+import Image from 'next/image';
+
+const SocialLinks = [
+  {
+    name: 'GitHub',
+    link: 'https://github.com/NicolasMilliard',
+    icon: '/images/social/github-logo.svg',
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://fr.linkedin.com/in/nicolas-milliard',
+    icon: '/images/social/linkedin-logo.svg',
+  },
+  {
+    name: 'Npmjs',
+    link: 'https://www.npmjs.com/~nicolasmilliard',
+    icon: '/images/social/npmjs-logo.svg',
+  },
+];
 
 const Footer = () => {
-  const SocialLinks = [
-    {
-      name: "GitHub",
-      link: "https://github.com/NicolasMilliard",
-      icon: "/images/social/github-logo.svg",
-    },
-    {
-      name: "LinkedIn",
-      link: "https://fr.linkedin.com/in/nicolas-milliard",
-      icon: "/images/social/linkedin-logo.svg",
-    },
-    {
-      name: "Npmjs",
-      link: "https://www.npmjs.com/~nicolasmilliard",
-      icon: "/images/social/npmjs-logo.svg",
-    },
-  ];
-
   return (
     <footer className="flex flex-col items-center justify-center gap-10 bg-black py-8 md:flex-row md:rounded-b-3xl">
       <Image

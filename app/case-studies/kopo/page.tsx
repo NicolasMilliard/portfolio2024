@@ -1,19 +1,19 @@
 // Components
-import { PrimaryLink, SocialLink } from "@app/components/Link";
-import { GradientParagraph, Paragraph } from "@app/components/Text";
-import { MainTitle, SectionTitle, Title } from "@app/components/Title";
-import Image from "next/image";
+import { PrimaryLink, SocialLink } from '@app/components/Link';
+import { GradientParagraph, Paragraph } from '@app/components/Text';
+import { MainTitle, SectionTitle, Title } from '@app/components/Title';
+import Image from 'next/image';
 // Types
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Kopo | Nicolas Milliard",
-  description: "Kopo case study.",
+  title: 'Kopo | Nicolas Milliard',
+  description: 'Kopo case study.',
 };
 
-const Kopo = () => {
-  const githubIcon = "/images/social/github-logo.svg";
+const githubIcon = '/images/social/github-logo.svg';
 
+const Kopo = () => {
   return (
     <>
       <section className="mb-32 flex flex-col items-center gap-10">

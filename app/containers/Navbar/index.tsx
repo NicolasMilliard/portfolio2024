@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 // Components
-import Logo from "@components/Navbar/Logo";
-import Menu from "@components/Navbar/Menu";
+import Logo from '@components/Navbar/Logo';
+import Menu from '@components/Navbar/Menu';
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
-  const [dynamicBorder, setDynamicBorder] = useState<string>("md:rounded-3xl");
-  const [dynamicHeight, setDynamicHeight] = useState<string>("h-32");
+  const [dynamicBorder, setDynamicBorder] = useState<string>('md:rounded-3xl');
+  const [dynamicHeight, setDynamicHeight] = useState<string>('h-32');
   const [isSmall, setIsSmall] = useState<boolean>(false);
 
   const handleScroll = () => {
@@ -16,20 +16,20 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     if (scrollPosition > 40) {
-      setDynamicBorder("md:rounded-b-3xl");
-      setDynamicHeight("h-24");
+      setDynamicBorder('md:rounded-b-3xl');
+      setDynamicHeight('h-24');
       setIsSmall(true);
     } else {
-      setDynamicBorder("md:rounded-3xl");
-      setDynamicHeight("h-32");
+      setDynamicBorder('md:rounded-3xl');
+      setDynamicHeight('h-32');
       setIsSmall(false);
     }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [scrollPosition]);
 

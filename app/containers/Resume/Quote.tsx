@@ -1,4 +1,4 @@
-import { Paragraph } from "@app/components/Text";
+import { Paragraph } from '@app/components/Text';
 
 const Quote = () => {
   return (

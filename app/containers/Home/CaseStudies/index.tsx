@@ -1,11 +1,11 @@
 // Components
-import { PrimaryButton } from "@app/components/Button";
-import { PrimaryLink } from "@app/components/Link";
-import { GradientParagraph, Paragraph } from "@app/components/Text";
-import { SectionTitle, SubTitle } from "@components/Title";
-import CaseStudyImage from "./CaseStudyImage";
+import { PrimaryButton } from '@app/components/Button';
+import { PrimaryLink } from '@app/components/Link';
+import { GradientParagraph, Paragraph } from '@app/components/Text';
+import { SectionTitle, SubTitle } from '@components/Title';
+import CaseStudyImage from './CaseStudyImage';
 // Data
-import { case_studies } from "@app/data/case_studies";
+import { case_studies } from '@app/data/case_studies';
 
 const CaseStudies = () => {
   return (
@@ -41,7 +41,7 @@ const CaseStudies = () => {
               {!isOdd && <CaseStudyImage index={index} title={title} />}
             </div>
           );
-        }
+        },
       )}
     </section>
   );

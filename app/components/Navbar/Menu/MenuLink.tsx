@@ -1,5 +1,5 @@
 // Components
-import Link from "next/link";
+import Link from 'next/link';
 
 const MenuLink = ({
   path,
@@ -12,10 +12,9 @@ const MenuLink = ({
 }) => {
   return (
     <Link
-      // href={`/${target === "home" ? "" : target}`}
       href={target}
       className={`${
-        path === target ? "text-ultramarine" : ""
+        path === target ? 'text-ultramarine' : ''
       } transition-colors duration-200 hover:text-congo_pink`}
     >
       {textLink}

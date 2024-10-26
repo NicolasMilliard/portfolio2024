@@ -1,7 +1,7 @@
 // Components
-import { GradientTitle } from "@components/Title";
-import Image from "next/image";
-import Link from "next/link";
+import { GradientTitle } from '@components/Title';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Logo = ({ isSmall }: { isSmall: boolean }) => {
   return (

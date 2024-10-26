@@ -1,10 +1,10 @@
 // Components
-import Image from "next/image";
+import Image from 'next/image';
 
 export enum CaseStudiesImages {
-  cube = "cube",
-  spring = "spring",
-  hexagon = "hexagon",
+  cube = 'cube',
+  spring = 'spring',
+  hexagon = 'hexagon',
 }
 
 const CaseStudyImage = ({ index, title }: { index: number; title: string }) => {

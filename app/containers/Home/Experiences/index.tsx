@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 // Components
-import { SectionTitle } from "@components/Title";
-import ExperienceDetails from "./ExperienceDetails";
-import Tabs from "./Tabs";
+import { SectionTitle } from '@components/Title';
+import ExperienceDetails from './ExperienceDetails';
+import Tabs from './Tabs';
 // Types
-import { ExperiencesList } from "@app/types/experiences";
+import { ExperiencesList } from '@app/types/experiences';
 
 const Experiences = () => {
   const [height, setHeight] = useState<number>(0);
   const [activeTab, setActiveTab] = useState<ExperiencesList>(
-    ExperiencesList.yper
+    ExperiencesList.yper,
   );
-  const marginBottom = "8rem";
+  const marginBottom = '8rem';
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const handleTabChange = (tab: ExperiencesList) => {
@@ -22,15 +22,21 @@ const Experiences = () => {
 
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
-      sectionRef.current && setHeight(sectionRef.current.clientHeight);
+      if (sectionRef.current) {
+        setHeight(sectionRef.current.clientHeight);
+      }
     });
 
     const currentSectionRef = sectionRef.current;
 
-    currentSectionRef && resizeObserver.observe(currentSectionRef);
+    if (currentSectionRef) {
+      resizeObserver.observe(currentSectionRef);
+    }
 
     return () => {
-      currentSectionRef && resizeObserver.unobserve(currentSectionRef);
+      if (currentSectionRef) {
+        resizeObserver.unobserve(currentSectionRef);
+      }
     };
   }, []);
 

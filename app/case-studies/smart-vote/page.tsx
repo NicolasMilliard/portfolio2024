@@ -1,20 +1,20 @@
 // Components
-import { PrimaryLink, SocialLink } from "@app/components/Link";
-import { GradientParagraph, Paragraph } from "@app/components/Text";
-import { MainTitle, SectionTitle, Title } from "@app/components/Title";
-import Image from "next/image";
-import Link from "next/link";
+import { PrimaryLink, SocialLink } from '@app/components/Link';
+import { GradientParagraph, Paragraph } from '@app/components/Text';
+import { MainTitle, SectionTitle, Title } from '@app/components/Title';
+import Image from 'next/image';
+import Link from 'next/link';
 // Types
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "SmartVote | Nicolas Milliard",
-  description: "SmartVote case study.",
+  title: 'SmartVote | Nicolas Milliard',
+  description: 'SmartVote case study.',
 };
 
-const SmartVote = () => {
-  const githubIcon = "/images/social/github-logo.svg";
+const githubIcon = '/images/social/github-logo.svg';
 
+const SmartVote = () => {
   return (
     <>
       <section className="mb-32 flex flex-col items-center gap-10">

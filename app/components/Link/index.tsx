@@ -1,13 +1,13 @@
-import { syne } from "@utils/fonts";
+import { syne } from '@utils/fonts';
 // Components
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 // Types
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 interface LinkProps {
   href: string;
-  target: "_blank" | "_self";
+  target: '_blank' | '_self';
   children: ReactNode;
 }
 
@@ -21,7 +21,7 @@ export const PrimaryLink = ({ href, target, children }: LinkProps) => {
       <Link
         href={href}
         target={target}
-        className={`${syne.className} text-grey-100 relative z-10 rounded-xl bg-black px-6 py-3 font-semibold`}
+        className={`${syne.className} relative z-10 rounded-xl bg-black px-6 py-3 font-semibold text-grey-100`}
       >
         {children}
       </Link>
@@ -36,7 +36,7 @@ export const SecondaryLink = ({ href, target, children }: LinkProps) => {
       <Link
         href={href}
         target={target}
-        className={`${syne.className} text-grey-100 relative z-10 rounded-xl bg-black px-6 py-3 font-semibold`}
+        className={`${syne.className} relative z-10 rounded-xl bg-black px-6 py-3 font-semibold text-grey-100`}
       >
         {children}
       </Link>
@@ -44,12 +44,6 @@ export const SecondaryLink = ({ href, target, children }: LinkProps) => {
     </div>
   );
 };
-
-interface SocialLinkProps {
-  href: string;
-  icon: string;
-  children: ReactNode;
-}
 
 export const SocialLink = ({ href, target, icon, children }: IconLinkProps) => {
   return (

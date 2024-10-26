@@ -1,12 +1,13 @@
 // Components
-import { Paragraph } from "@components/Text";
-import { MainTitle, Title } from "@components/Title";
-import Image from "next/image";
+import { Paragraph } from '@components/Text';
+import { MainTitle, Title } from '@components/Title';
+import Image from 'next/image';
 // Types
-import { CaseStudiesImages } from "../CaseStudies/CaseStudyImage";
+import { CaseStudiesImages } from '../CaseStudies/CaseStudyImage';
+
+const images = [...Object.keys(CaseStudiesImages), 'prism'];
 
 const Introduction = () => {
-  const images = [...Object.keys(CaseStudiesImages), "prism"];
   const randomImage = images[Math.floor(Math.random() * images.length)];
 
   return (

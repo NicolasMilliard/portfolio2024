@@ -1,6 +1,6 @@
-import { buenosAires, syne } from "@utils/fonts";
+import { buenosAires, syne } from '@utils/fonts';
 // Types
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 export const MainTitle = ({ children }: { children: ReactNode }) => {
   return (
@@ -13,7 +13,7 @@ export const MainTitle = ({ children }: { children: ReactNode }) => {
 export const Title = ({
   children,
   isWidest,
-  className = "",
+  className = '',
 }: {
   children: ReactNode;
   isWidest?: boolean;
@@ -24,7 +24,7 @@ export const Title = ({
       className={`${
         buenosAires.className
       } text-4xl font-extralight text-black ${
-        isWidest ? "tracking-widest" : ""
+        isWidest ? 'tracking-widest' : ''
       } ${className}`}
     >
       {children}

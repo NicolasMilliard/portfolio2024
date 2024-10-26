@@ -1,0 +1,5 @@
+# Run linting
+pnpm lint
+
+# Run prettier
+pnpm format

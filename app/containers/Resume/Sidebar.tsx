@@ -1,6 +1,6 @@
-import { List, ListItem } from "@app/components/List";
-import { Paragraph } from "@app/components/Text";
-import { GradientTitle } from "@app/components/Title";
+import { List, ListItem } from '@app/components/List';
+import { Paragraph } from '@app/components/Text';
+import { GradientTitle } from '@app/components/Title';
 
 const Sidebar = () => {
   return (
