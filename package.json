@@ -11,7 +11,7 @@
     "postinstall": "husky"
   },
   "dependencies": {
-    "next": "14.2.15",
+    "next": "15.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
@@ -33,5 +33,5 @@
     "typescript": "5.6.3",
     "typescript-eslint": "8.11.0"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.12.3"
 }
