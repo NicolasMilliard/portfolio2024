@@ -1,6 +1,6 @@
 import { ExperiencesList } from '@app/types/experiences';
 
-export const experiences = [
+export const ENGLISH_EXPERIENCES = [
   {
     id: 'yper_lead_front_end_developer',
     company: ExperiencesList.yper,
@@ -58,6 +58,68 @@ export const experiences = [
       'Build automated data flows to replace repetitive tasks',
       'Develop and maintain new products, technical documentation, and workflows',
       'Followed industry best practices, and learned 3 new technologies',
+    ],
+  },
+];
+
+export const FRENCH_EXPERIENCES = [
+  {
+    id: 'yper_lead_front_end_developer',
+    company: ExperiencesList.yper,
+    job_title: 'Lead Développeur Front-End',
+    start_date: 'Sept. 2024',
+    end_date: "Aujourd'hui",
+    location: 'Télétravail total',
+    tasks: [
+      'Diriger une équipe de développement, favoriser la collaboration, les revues de code et les meilleures pratiques pour des standards de haute qualité',
+      'Concevoir et mettre en œuvre une nouvelle architecture monorepo avec Turbo en facilitant la gestion des projets et la maintenabilité de code',
+      'Repenser les workflows de développement en optimisant CircleCI, automatiser les builds Docker et simplifier les déploiements Kubernetes',
+      'Développer des fonctionnalités front-end avancées avec TypeScript, Recoil et TailwindCSS tout en améliorant la maintenabilité et la modularité',
+      "Coordonner la documentation technique pour garantir la clarté des nouvelles pratiques et des workflows de l'équipe",
+    ],
+  },
+  {
+    id: 'yper_front_end_developer',
+    company: ExperiencesList.yper,
+    job_title: 'Développeur Front-End',
+    start_date: 'Août 2023',
+    end_date: 'Sept. 2024',
+    location: 'Télétravail total',
+    tasks: [
+      'Développer et maintenir des applications avec React JS et Next JS',
+      'Implémenter des expériences utilisateur riches en créant de nouvelles fonctionnalités utilisant TypeScript, Recoil, TailwindCSS et Styled Components',
+      'Intégrer et tester de nouvelles fonctionnalités basées sur les retours des utilisateurs',
+      'Développer et maintenir de nouveaux produits, la documentation technique et les workflows',
+    ],
+  },
+  {
+    id: 'freelance_front_end_developer',
+    company: ExperiencesList.freelance,
+    job_title: 'Développeur Front-End',
+    start_date: 'Nov. 2017',
+    end_date: 'Août 2023',
+    location: 'Sainte-Maxime, France',
+    tasks: [
+      'Développer des sites web et des dApps pour de nombreuses entreprises (Éducation, Santé, Alimentation, Nouvelles Technologies...)',
+      'Implémenter des expériences utilisateur riches en créant de nouvelles fonctionnalités avec HTML, CSS, JavaScript et TypeScript',
+      'Intégrer et tester de nouvelles fonctionnalités basées sur les retours des utilisateurs',
+      'Développer et maintenir de nouveaux produits, la documentation technique et les workflows',
+    ],
+  },
+  {
+    id: 'dmd_france_front_end_developer',
+    company: ExperiencesList.dmdFrance,
+    job_title: 'Développeur Front-End',
+    start_date: 'Juil. 2016',
+    end_date: 'Nov. 2021',
+    location: 'Fréjus, France',
+    tasks: [
+      "Diriger l'architecture, la conception et le développement de plus de 15 sites web et applications",
+      'Développer des sites web pour 4 partenaires commerciaux internationaux',
+      'Intégrer des API externes dans des pages web et des applications',
+      'Créer des flux de données automatisés pour remplacer les tâches répétitives',
+      'Développer et maintenir de nouveaux produits, la documentation technique et les workflows',
+      "Suivi des meilleures pratiques de l'industrie et apprentissage de 3 nouvelles technologies",
     ],
   },
 ];

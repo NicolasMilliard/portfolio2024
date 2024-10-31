@@ -1,28 +1,26 @@
+'use client';
+
+import { useChangeLocale, useCurrentLocale } from '@app/locales/client';
 import Image from 'next/image';
 
-export type Lang = 'fr' | 'en';
+const LanguageSwitch = () => {
+  const locale = useCurrentLocale();
+  const changeLocale = useChangeLocale();
 
-const LanguageSwitch = ({
-  lang,
-  setLang,
-}: {
-  lang: Lang;
-  setLang: (lang: Lang) => void;
-}) => {
   return (
     <div className="fixed right-8 top-2/4 rounded-l-3xl bg-white px-2 py-4 drop-shadow-xl">
       <div className="flex flex-col gap-4">
         <ButtonFlag
           lang="fr"
-          currentLang={lang}
-          setLang={setLang}
+          currentLang={locale}
+          setLang={changeLocale}
           src="/images/languages/france_flag.svg"
           alt="FR"
         />
         <ButtonFlag
           lang="en"
-          currentLang={lang}
-          setLang={setLang}
+          currentLang={locale}
+          setLang={changeLocale}
           src="/images/languages/usa_flag.svg"
           alt="EN"
         />
@@ -30,6 +28,8 @@ const LanguageSwitch = ({
     </div>
   );
 };
+
+type Lang = 'fr' | 'en';
 
 type ButtonFlagProps = {
   lang: Lang;
