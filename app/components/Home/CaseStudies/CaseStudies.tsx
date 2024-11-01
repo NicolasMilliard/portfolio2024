@@ -1,17 +1,26 @@
+'use client';
+
+import { useCurrentLocale, useScopedI18n } from '@app/locales/client';
+// Data
+import { ENGLISH_CASE_STUDIES, FRENCH_CASE_STUDIES } from '@data/case_studies';
 // Components
 import { PrimaryLink } from '@app/components/Link';
 import { PrimaryButton } from '@components/Button';
 import { GradientParagraph, Paragraph } from '@components/Text';
 import { SectionTitle, SubTitle } from '@components/Title';
 import CaseStudyImage from './CaseStudyImage';
-// Data
-import { case_studies } from '@data/case_studies';
 
 const CaseStudies = () => {
+  const tCaseStudies = useScopedI18n('Homepage.CaseStudies');
+  const locale = useCurrentLocale();
+
+  const caseStudies =
+    locale === 'fr' ? FRENCH_CASE_STUDIES : ENGLISH_CASE_STUDIES;
+
   return (
     <section className="mb-32 flex flex-col items-center justify-center md:mx-20">
-      <SectionTitle>Case Studies</SectionTitle>
-      {case_studies.map(
+      <SectionTitle>{tCaseStudies('title')}</SectionTitle>
+      {caseStudies.map(
         ({ id, link, title, tech_stack, description }, index) => {
           const isOdd = index % 2 === 1;
 
@@ -29,11 +38,11 @@ const CaseStudies = () => {
                 <div className="mt-8">
                   {link ? (
                     <PrimaryLink href={`case-studies/${link}`} target="_self">
-                      View the case study
+                      {tCaseStudies('viewCaseStudy')}
                     </PrimaryLink>
                   ) : (
                     <PrimaryButton disabled={link === null}>
-                      View the case study
+                      {tCaseStudies('viewCaseStudy')}
                     </PrimaryButton>
                   )}
                 </div>

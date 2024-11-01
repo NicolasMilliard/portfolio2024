@@ -1,17 +1,13 @@
+import { Kopo } from './fr/case-studies/kopo';
+import { Homepage } from './fr/homepage';
+import { Menu } from './fr/menu';
+import { Resume } from './fr/resume';
+
 export default {
-  Homepage: {
-    meta: {
-      title: 'Front-End Developer | Nicolas Milliard',
-      description: 'Welcome to my portfolio!',
-    },
-  },
-  Introduction: {
-    title: 'Développeur Front‑End',
-    experience: "J'ai plus de 8 ans d'expérience comme Développeur Front-End.",
-    tools:
-      'Je travaille principalement avec React JS et Next JS en TypeScript.',
-  },
-  Experiences: {
-    title: 'Expériences',
+  Menu,
+  Homepage,
+  Resume,
+  CaseStudies: {
+    Kopo,
   },
 } as const;

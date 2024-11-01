@@ -1,5 +1,6 @@
 'use client';
 
+import { useScopedI18n } from '@app/locales/client';
 import { syne } from '@app/utils/fonts';
 import { usePathname } from 'next/navigation';
 // Components
@@ -7,29 +8,30 @@ import MenuLink from './MenuLink';
 
 const Menu = ({ isTextWhite }: { isTextWhite: boolean }) => {
   const pathName = usePathname();
+  const tMenu = useScopedI18n('Menu');
 
   return (
     <menu
       className={`${syne.className} flex items-center justify-center gap-4 md:justify-end md:gap-10 ${isTextWhite ? 'text-white' : 'text-black'}`}
     >
       <li>
-        <MenuLink path={pathName} target="/" textLink="Home" />
+        <MenuLink path={pathName} target="/" textLink={tMenu('home')} />
       </li>
       <li>
         <MenuLink
           path={pathName}
           target="/case-studies"
-          textLink="Case Studies"
+          textLink={tMenu('caseStudies')}
         />
       </li>
       <li>
-        <MenuLink path={pathName} target="/resume" textLink="Resume" />
+        <MenuLink path={pathName} target="/resume" textLink={tMenu('resume')} />
       </li>
       <li>
         <MenuLink
           path={pathName}
-          target="mailto:contact@nicolasmilliard.fr"
-          textLink="Contact"
+          target={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+          textLink={tMenu('contact')}
         />
       </li>
     </menu>

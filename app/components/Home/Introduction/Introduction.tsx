@@ -5,7 +5,7 @@ import { MainTitle, Title } from '@components/Title';
 import Image from 'next/image';
 
 const Introduction = async () => {
-  const t = await getScopedI18n('Introduction');
+  const tIntroduction = await getScopedI18n('Homepage.Introduction');
 
   return (
     <section className="mb-32 flex items-center justify-center gap-20 lg:px-20 xl:px-40">
@@ -22,10 +22,10 @@ const Introduction = async () => {
       <div>
         <MainTitle>Nicolas Milliard</MainTitle>
         <div className="my-2">
-          <Title isWidest={true}>{t('title')}</Title>
+          <Title isWidest={true}>{tIntroduction('title')}</Title>
         </div>
-        <Paragraph>{t('experience')}</Paragraph>
-        <Paragraph>{t('tools')}</Paragraph>
+        <Paragraph>{tIntroduction('experience')}</Paragraph>
+        <Paragraph>{tIntroduction('tools')}</Paragraph>
       </div>
     </section>
   );

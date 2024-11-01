@@ -1,9 +1,14 @@
+import { getScopedI18n } from '@app/locales/server';
+// Components
 import { List, ListItem } from '@components/List';
 import { Paragraph } from '@components/Text';
 import { GradientTitle, MainTitle, Title } from '@components/Title';
 import Image from 'next/image';
 
-const Sidebar = () => {
+const Sidebar = async () => {
+  const tIntroduction = await getScopedI18n('Resume.Introduction');
+  const tSidebar = await getScopedI18n('Resume.Sidebar');
+
   return (
     <div>
       <div className="mb-10 h-30 w-30 rounded-full bg-gradient-to-r from-ultramarine to-congo_pink p-0.5">
@@ -17,33 +22,35 @@ const Sidebar = () => {
       </div>
       <div className="mb-10 flex flex-col gap-4 md:hidden">
         <MainTitle>Nicolas Milliard</MainTitle>
-        <Title isWidest={true}>Front-End Developer</Title>
+        <Title isWidest={true}>{tIntroduction('title')}</Title>
       </div>
       <div className="mb-10 hidden gap-6 xs:flex xs:flex-col lg:max-w-52">
         <div className="flex flex-col gap-8 sm:flex-row md:flex-col md:gap-10">
           <section>
-            <GradientTitle>Education</GradientTitle>
+            <GradientTitle>{tSidebar('Education.title')}</GradientTitle>
             <div className="flex flex-col gap-2">
               <Paragraph>
-                <span className="font-normal">BSC Degree Computer Science</span>
+                <span className="font-normal">
+                  {tSidebar('Education.degrees.0.name')}
+                </span>
                 <br />
-                UFR Ingémedia
+                {tSidebar('Education.degrees.0.school')}
                 <br />
-                Setp. 2015 - June 2016
+                {tSidebar('Education.degrees.0.date')}
               </Paragraph>
               <Paragraph>
                 <span className="font-normal">
-                  Associate&apos;s Degree Computer Science
+                  {tSidebar('Education.degrees.1.name')}
                 </span>
                 <br />
-                IUT MMI
+                {tSidebar('Education.degrees.1.school')}
                 <br />
-                Setp. 2013 - June 2015
+                {tSidebar('Education.degrees.1.date')}
               </Paragraph>
             </div>
           </section>
           <section>
-            <GradientTitle>Skills</GradientTitle>
+            <GradientTitle>{tSidebar('Skills.title')}</GradientTitle>
             <div className="flex gap-4 md:flex-col">
               <List>
                 <ListItem>TypeScript</ListItem>
@@ -73,35 +80,47 @@ const Sidebar = () => {
         </div>
         <div className="flex flex-row gap-4 md:flex-col md:gap-6">
           <section>
-            <GradientTitle>Certifications</GradientTitle>
+            <GradientTitle>{tSidebar('Certifications.title')}</GradientTitle>
             <div className="flex flex-col gap-2">
               <Paragraph>
-                <span className="font-normal">Fundamentals of management</span>
+                <span className="font-normal">
+                  {tSidebar('Certifications.certifications.0.name')}
+                </span>
                 <br />
-                Quasar
+                {tSidebar('Certifications.certifications.0.school')}
                 <br />
-                2024
+                {tSidebar('Certifications.certifications.0.date')}
               </Paragraph>
               <Paragraph>
-                <span className="font-normal">Blockchain Developer</span>
+                <span className="font-normal">
+                  {tSidebar('Certifications.certifications.1.name')}
+                </span>
                 <br />
-                Alyra School
+                {tSidebar('Certifications.certifications.1.school')}
                 <br />
-                2022
+                {tSidebar('Certifications.certifications.1.date')}
               </Paragraph>
               <Paragraph>
-                <span className="font-normal">React Native</span>
+                <span className="font-normal">
+                  {tSidebar('Certifications.certifications.2.name')}
+                </span>
                 <br />
-                OpenClassrooms
+                {tSidebar('Certifications.certifications.2.school')}
                 <br />
-                2021
+                {tSidebar('Certifications.certifications.2.date')}
               </Paragraph>
             </div>
           </section>
           <section>
-            <GradientTitle>Languages</GradientTitle>
-            <Paragraph>French (native)</Paragraph>
-            <Paragraph>English (fluent)</Paragraph>
+            <GradientTitle>{tSidebar('Languages.title')}</GradientTitle>
+            <Paragraph>
+              {tSidebar('Languages.languages.0.name')} (
+              {tSidebar('Languages.languages.0.level')})
+            </Paragraph>
+            <Paragraph>
+              {tSidebar('Languages.languages.1.name')} (
+              {tSidebar('Languages.languages.1.level')})
+            </Paragraph>
           </section>
         </div>
       </div>

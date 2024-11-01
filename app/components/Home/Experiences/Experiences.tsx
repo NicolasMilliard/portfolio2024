@@ -10,7 +10,7 @@ import Tabs from './Tabs';
 const defaultTab = 'yper_lead_front_end_developer';
 
 const Experiences = () => {
-  const t = useScopedI18n('Experiences');
+  const t = useScopedI18n('Homepage.Experiences');
 
   const [height, setHeight] = useState<number>(0);
   const [activeTab, setActiveTab] = useState<string>(defaultTab);

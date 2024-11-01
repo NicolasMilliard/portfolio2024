@@ -8,23 +8,26 @@ const LanguageSwitch = () => {
   const changeLocale = useChangeLocale();
 
   return (
-    <div className="fixed right-8 top-2/4 rounded-l-3xl bg-white px-2 py-4 drop-shadow-xl">
-      <div className="flex flex-col gap-4">
-        <ButtonFlag
-          lang="fr"
-          currentLang={locale}
-          setLang={changeLocale}
-          src="/images/languages/france_flag.svg"
-          alt="FR"
-        />
-        <ButtonFlag
-          lang="en"
-          currentLang={locale}
-          setLang={changeLocale}
-          src="/images/languages/usa_flag.svg"
-          alt="EN"
-        />
+    <div className="group relative inline-block">
+      <div className="fixed right-8 top-2/4 z-20 rounded-l-3xl bg-white px-2 py-4">
+        <div className="flex flex-col gap-4">
+          <ButtonFlag
+            lang="fr"
+            currentLang={locale}
+            setLang={changeLocale}
+            src="/images/languages/france_flag.svg"
+            alt="FR"
+          />
+          <ButtonFlag
+            lang="en"
+            currentLang={locale}
+            setLang={changeLocale}
+            src="/images/languages/usa_flag.svg"
+            alt="EN"
+          />
+        </div>
       </div>
+      <div className="fixed inset-0 left-auto right-8 top-2/4 z-10 h-28 w-12 rounded-3xl bg-gradient-to-br from-ultramarine to-congo_pink blur-lg"></div>
     </div>
   );
 };
