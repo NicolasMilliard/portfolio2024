@@ -9,7 +9,7 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="group relative z-50 inline-block">
-      <div className="fixed right-0 top-2/4 z-20 rounded-l-3xl bg-white px-2 py-4 md:right-8">
+      <div className="fixed right-0 top-40 z-20 rounded-l-3xl bg-white px-2 py-4 md:right-8 md:top-2/4">
         <div className="flex flex-col gap-4">
           <ButtonFlag
             lang="fr"
@@ -27,7 +27,7 @@ const LanguageSwitcher = () => {
           />
         </div>
       </div>
-      <div className="fixed inset-0 left-auto right-0 top-2/4 z-10 h-28 w-12 rounded-3xl bg-gradient-to-br from-ultramarine to-congo_pink blur-lg md:right-8"></div>
+      <div className="fixed inset-0 left-auto right-0 top-40 z-10 h-28 w-12 rounded-3xl bg-gradient-to-br from-ultramarine to-congo_pink blur-lg md:right-8 md:top-2/4"></div>
     </div>
   );
 };
