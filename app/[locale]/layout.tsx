@@ -2,9 +2,9 @@ import { buenosAires } from '../utils/fonts';
 import './globals.css';
 import { Providers } from './providers';
 // Components
+import LanguageSwitcher from '@app/components/Switch/LanguageSwitcher';
 import Footer from '@components/Footer/Footer';
 import Navbar from '@components/Navbar/Navbar';
-import LanguageSwitch from '@components/Switch/LanguageSwitch';
 // Types
 import type { ReactNode } from 'react';
 
@@ -22,7 +22,7 @@ export default async function RootLayout({
         <Providers locale={locale}>
           <div className="relative bg-grey-100 md:mx-8 md:my-10 md:rounded-3xl md:shadow-xl">
             <Navbar />
-            <LanguageSwitch />
+            <LanguageSwitcher />
             <main className="px-8 pb-14 pt-15 md:px-15 md:pt-30">
               {children}
             </main>

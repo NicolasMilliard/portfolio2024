@@ -3,13 +3,13 @@
 import { useChangeLocale, useCurrentLocale } from '@app/locales/client';
 import Image from 'next/image';
 
-const LanguageSwitch = () => {
+const LanguageSwitcher = () => {
   const locale = useCurrentLocale();
   const changeLocale = useChangeLocale();
 
   return (
-    <div className="group relative inline-block">
-      <div className="fixed right-8 top-2/4 z-20 rounded-l-3xl bg-white px-2 py-4">
+    <div className="group relative z-50 inline-block">
+      <div className="fixed right-0 top-2/4 z-20 rounded-l-3xl bg-white px-2 py-4 md:right-8">
         <div className="flex flex-col gap-4">
           <ButtonFlag
             lang="fr"
@@ -27,7 +27,7 @@ const LanguageSwitch = () => {
           />
         </div>
       </div>
-      <div className="fixed inset-0 left-auto right-8 top-2/4 z-10 h-28 w-12 rounded-3xl bg-gradient-to-br from-ultramarine to-congo_pink blur-lg"></div>
+      <div className="fixed inset-0 left-auto right-0 top-2/4 z-10 h-28 w-12 rounded-3xl bg-gradient-to-br from-ultramarine to-congo_pink blur-lg md:right-8"></div>
     </div>
   );
 };
@@ -59,4 +59,4 @@ const ButtonFlag = ({
   );
 };
 
-export default LanguageSwitch;
+export default LanguageSwitcher;

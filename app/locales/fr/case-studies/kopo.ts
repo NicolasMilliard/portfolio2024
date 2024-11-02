@@ -51,7 +51,7 @@ export const Kopo = {
     content: [
       {
         paragraph:
-          "Le développement front-end du projet utilise Next.js pour la création du site web, Rainbow Kit pour la connexion au portefeuille numérique de l'utilisateur, Ethers.js pour la communication avec la blockchain, et NFT.storage pour la gestion des NFT. Wagmi.sh est intégré pour faciliter la connectivité blockchain et servir de gestionnaire d'état global.",
+          "Le développement front-end du projet utilise Next.js pour la création de l'application, Rainbow Kit pour la connexion au portefeuille numérique de l'utilisateur, Ethers.js pour la communication avec la blockchain, et NFT.storage pour la gestion des NFT. Wagmi.sh est intégré pour faciliter la connectivité blockchain et servir de gestionnaire d'état global.",
       },
       {
         paragraph:
@@ -88,7 +88,7 @@ export const Kopo = {
       },
       {
         paragraph:
-          'Le KopoFolderFactory est un smart contract de type Factory permettant de dupliquer le smart contract "KopoFolderHandler", qui représente le dossier de demande de Certificat d\'Économie d\'Énergie (ESC) sur la blockchain.',
+          'Le KopoFolderFactory est un smart contract de type Factory permettant de dupliquer le smart contract "KopoFolderHandler", qui représente le dossier de demande de Certificat d\'Économie d\'Énergie (CEE) sur la blockchain.',
       },
       {
         paragraph:

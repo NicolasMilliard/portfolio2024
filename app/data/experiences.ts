@@ -72,7 +72,7 @@ export const FRENCH_EXPERIENCES = [
     location: 'Télétravail total',
     tasks: [
       'Diriger une équipe de développement, favoriser la collaboration, les revues de code et les meilleures pratiques pour des standards de haute qualité',
-      'Concevoir et mettre en œuvre une nouvelle architecture monorepo avec Turbo en facilitant la gestion des projets et la maintenabilité de code',
+      'Concevoir et mettre en œuvre une nouvelle architecture monorepo avec Turbo en facilitant la gestion des projets et la maintenabilité du code',
       'Repenser les workflows de développement en optimisant CircleCI, automatiser les builds Docker et simplifier les déploiements Kubernetes',
       'Développer des fonctionnalités front-end avancées avec TypeScript, Recoil et TailwindCSS tout en améliorant la maintenabilité et la modularité',
       "Coordonner la documentation technique pour garantir la clarté des nouvelles pratiques et des workflows de l'équipe",

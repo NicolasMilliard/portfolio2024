@@ -1,4 +1,4 @@
-import { Kopo } from './fr/case-studies/kopo';
+import { Kopo, SmartVote } from './fr/case-studies';
 import { Homepage } from './fr/homepage';
 import { Menu } from './fr/menu';
 import { Resume } from './fr/resume';
@@ -9,5 +9,6 @@ export default {
   Resume,
   CaseStudies: {
     Kopo,
+    SmartVote,
   },
 } as const;
