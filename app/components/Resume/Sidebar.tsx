@@ -13,10 +13,10 @@ const Sidebar = async () => {
     <div>
       <div className="mb-10 h-30 w-30 rounded-full bg-gradient-to-r from-ultramarine to-congo_pink p-0.5">
         <Image
-          src="/images/resume/boki.png"
+          src="/images/resume/nicolas-milliard.jpg"
           width={120}
           height={120}
-          alt=""
+          alt="Nicolas Milliard"
           className="rounded-full"
         />
       </div>
