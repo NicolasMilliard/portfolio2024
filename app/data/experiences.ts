@@ -9,11 +9,11 @@ export const ENGLISH_EXPERIENCES = [
     end_date: 'Today',
     location: 'Fully Remote',
     tasks: [
-      'Led a development team, promoting collaboration, code reviews, and best practices for high-quality standards',
-      'Designed and implemented a new monorepo architecture using Turbo to streamline project management and code sharing',
-      'Refined development workflows by optimizing CircleCI, automating Docker builds, and simplifying Kubernetes deployments for faster, reliable releases',
-      'Built advanced front-end features with TypeScript, Recoil, and TailwindCSS to improve maintainability and modularity',
-      'Coordinated technical documentation to ensure clarity in new practices and team workflows',
+      'Lead a development team, promoting collaboration, code reviews, and best practices for high-quality standards',
+      'Design and implement a new monorepo architecture using Turbo to streamline project management and code sharing',
+      'Refine development workflows by optimizing CircleCI, automating Docker builds, and simplifying Kubernetes deployments for faster, reliable releases',
+      'Build advanced front-end features with TypeScript, Recoil, and TailwindCSS to improve maintainability and modularity',
+      'Coordinate technical documentation to ensure clarity in new practices and team workflows',
     ],
   },
   {
