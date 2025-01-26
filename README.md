@@ -1,8 +1,8 @@
 # 📂 My Portfolio
 
 Welcome to my personal portfolio, built with the latest web technologies like
-Next.js 14, Tailwind CSS, and TypeScript. This project showcases my skills,
-projects, and experience as a front-end developer.
+Next.js 15, Tailwind CSS, and TypeScript. This project showcases my skills,
+projects, and experience as a front-end engineer.
 
 ## 🚀 Tech Stack
 

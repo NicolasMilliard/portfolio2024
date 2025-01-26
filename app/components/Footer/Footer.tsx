@@ -1,6 +1,6 @@
 import { SocialLink } from '@app/components/Link';
 import Menu from '@app/components/Navbar/Menu/Menu';
-import { githubLogo, linkedinLogo, npmjsLogo } from '@components/Icons';
+import { githubLogo, linkedinLogo } from '@components/Icons';
 import Image from 'next/image';
 
 const SocialLinks = [
@@ -14,11 +14,11 @@ const SocialLinks = [
     link: 'https://fr.linkedin.com/in/nicolas-milliard',
     icon: linkedinLogo,
   },
-  {
-    name: 'Npmjs',
-    link: 'https://www.npmjs.com/~nicolasmilliard',
-    icon: npmjsLogo,
-  },
+  // {
+  //   name: 'Npmjs',
+  //   link: 'https://www.npmjs.com/~nicolasmilliard',
+  //   icon: npmjsLogo,
+  // },
 ];
 
 const Footer = () => {
@@ -45,7 +45,7 @@ const Footer = () => {
             </SocialLink>
           ))}
         </div>
-        <Menu isTextWhite={true} />
+        <Menu className="text-white" />
       </div>
     </footer>
   );

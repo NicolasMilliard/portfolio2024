@@ -66,6 +66,7 @@ const Sidebar = async () => {
                 <ListItem>Redux</ListItem>
                 <ListItem>Recoil JS</ListItem>
                 <ListItem>Jest</ListItem>
+                <ListItem>Cypress</ListItem>
                 <ListItem>TailwindCSS</ListItem>
               </List>
               <List>
@@ -73,7 +74,7 @@ const Sidebar = async () => {
                 <ListItem>Foundry</ListItem>
                 <ListItem>Wagmi</ListItem>
                 <ListItem>Ethers.js</ListItem>
-                <ListItem>WalletConnect (Reown)</ListItem>
+                <ListItem>Reown</ListItem>
               </List>
             </div>
           </section>

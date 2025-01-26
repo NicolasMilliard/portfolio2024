@@ -7,7 +7,7 @@ import { SectionTitle } from '@components/Title';
 import ExperienceDetails from './ExperienceDetails';
 import Tabs from './Tabs';
 
-const defaultTab = 'yper_lead_front_end_developer';
+const defaultTab = 'yper_lead_front_end_engineer';
 
 const Experiences = () => {
   const t = useScopedI18n('Homepage.Experiences');
