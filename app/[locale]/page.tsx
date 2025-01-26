@@ -4,7 +4,7 @@ import { CaseStudies, Experiences, Introduction } from '@components/Home';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Front-End Developer | Nicolas Milliard',
+  title: 'Front-End Engineer | Nicolas Milliard',
   description: 'Welcome to my portfolio!',
 };
 

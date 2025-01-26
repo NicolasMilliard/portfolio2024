@@ -2,9 +2,9 @@ import { ExperiencesList } from '@app/types/experiences';
 
 export const ENGLISH_EXPERIENCES = [
   {
-    id: 'yper_lead_front_end_developer',
+    id: 'yper_lead_front_end_engineer',
     company: ExperiencesList.yper,
-    job_title: 'Lead Front-End Developer',
+    job_title: 'Lead Front-End Engineer',
     start_date: 'Sept. 2024',
     end_date: 'Today',
     location: 'Fully Remote',
@@ -17,9 +17,9 @@ export const ENGLISH_EXPERIENCES = [
     ],
   },
   {
-    id: 'yper_front_end_developer',
+    id: 'yper_front_end_engineer',
     company: ExperiencesList.yper,
-    job_title: 'Front-End Developer',
+    job_title: 'Front-End Engineer',
     start_date: 'Aug. 2023',
     end_date: 'Sept. 2024',
     location: 'Fully Remote',
@@ -31,9 +31,9 @@ export const ENGLISH_EXPERIENCES = [
     ],
   },
   {
-    id: 'freelance_front_end_developer',
+    id: 'freelance_front_end_engineer',
     company: ExperiencesList.freelance,
-    job_title: 'Front-End Developer',
+    job_title: 'Front-End Engineer',
     start_date: 'Nov. 2017',
     end_date: 'Aug. 2023',
     location: 'Sainte-Maxime, France',
@@ -45,9 +45,9 @@ export const ENGLISH_EXPERIENCES = [
     ],
   },
   {
-    id: 'dmd_france_front_end_developer',
+    id: 'dmd_france_front_end_engineer',
     company: ExperiencesList.dmdFrance,
-    job_title: 'Front-End Developer',
+    job_title: 'Front-End Engineer',
     start_date: 'July 2016',
     end_date: 'Nov. 2021',
     location: 'Fréjus, France',
@@ -64,7 +64,7 @@ export const ENGLISH_EXPERIENCES = [
 
 export const FRENCH_EXPERIENCES = [
   {
-    id: 'yper_lead_front_end_developer',
+    id: 'yper_lead_front_end_engineer',
     company: ExperiencesList.yper,
     job_title: 'Lead Développeur Front-End',
     start_date: 'Sept. 2024',
@@ -79,7 +79,7 @@ export const FRENCH_EXPERIENCES = [
     ],
   },
   {
-    id: 'yper_front_end_developer',
+    id: 'yper_front_end_engineer',
     company: ExperiencesList.yper,
     job_title: 'Développeur Front-End',
     start_date: 'Août 2023',
@@ -93,7 +93,7 @@ export const FRENCH_EXPERIENCES = [
     ],
   },
   {
-    id: 'freelance_front_end_developer',
+    id: 'freelance_front_end_engineer',
     company: ExperiencesList.freelance,
     job_title: 'Développeur Front-End',
     start_date: 'Nov. 2017',
@@ -107,7 +107,7 @@ export const FRENCH_EXPERIENCES = [
     ],
   },
   {
-    id: 'dmd_france_front_end_developer',
+    id: 'dmd_france_front_end_engineer',
     company: ExperiencesList.dmdFrance,
     job_title: 'Développeur Front-End',
     start_date: 'Juil. 2016',

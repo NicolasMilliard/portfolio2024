@@ -6,13 +6,13 @@ import { usePathname } from 'next/navigation';
 // Components
 import MenuLink from './MenuLink';
 
-const Menu = ({ isTextWhite }: { isTextWhite: boolean }) => {
+const Menu = ({ className = 'text-black' }: { className?: string }) => {
   const pathName = usePathname();
   const tMenu = useScopedI18n('Menu');
 
   return (
     <menu
-      className={`${syne.className} flex items-center justify-center gap-4 md:justify-end md:gap-10 ${isTextWhite ? 'text-white' : 'text-black'}`}
+      className={`${syne.className} flex items-center justify-center gap-4 md:justify-end md:gap-10 ${className}`}
     >
       <li>
         <MenuLink path={pathName} target="/" textLink={tMenu('home')} />

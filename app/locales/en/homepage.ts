@@ -1,13 +1,13 @@
 export const Homepage = {
   Introduction: {
-    title: 'Front-End Developer',
-    experience: "I'm an 8+ years experienced Front-End Developer.",
+    title: 'Front-End Engineer',
+    experience: "I'm an 8+ years experienced Front-End Engineer.",
     tools: 'I mainly work with React JS and Next JS in TypeScript.',
   },
   Experiences: {
     title: 'Experiences',
-    jobTitle: 'Front-End Developer',
-    leadJobTitle: 'Lead Front-End Developer',
+    jobTitle: 'Front-End Engineer',
+    leadJobTitle: 'Lead Front-End Engineer',
   },
   CaseStudies: {
     title: 'Case Studies',

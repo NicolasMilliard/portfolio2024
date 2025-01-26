@@ -1,6 +1,6 @@
 export const Resume = {
   Introduction: {
-    title: 'Front-End Developer',
+    title: 'Front-End Engineer',
     workExperience: 'Work Experience',
   },
   Sidebar: {
@@ -31,7 +31,7 @@ export const Resume = {
           date: '2024',
         },
         {
-          name: 'Blockchain Developer',
+          name: 'Blockchain Engineer',
           school: 'Alyra School',
           date: '2022',
         },
@@ -58,7 +58,7 @@ export const Resume = {
   },
   Quote: {
     experience:
-      'I have 8 years of experience as a Front-End Developer and more than one year as a Blockchain Developer.',
+      'I have 8 years of experience as a Front-End Engineer and more than one year as a Blockchain Engineer.',
     tools:
       'I have a good experience with many tools in Web 2 (React JS, Next JS, Redux, Jest...) and Web 3 (Hardhat, Foundry, Wagmi...).',
     personality:
